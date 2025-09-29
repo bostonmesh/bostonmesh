@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://bostonmesh.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -112,7 +112,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://github.com/Darachnid/Boston-Meshnet',
+                href: 'https://discord.gg/MUVASVEEES',
               },
               {
                 label: 'Github',
