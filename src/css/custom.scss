@@ -43,29 +43,18 @@
 }
 
 .meshcore {
-  .container {
-    margin: 3rem;
+  section {
+    padding: 3rem;
 
-    h2 {
+  }
 
-      text-align: center;
-    }
+  h2 {
+    text-align: center;
   }
 }
 
 
 /* Repeaters Section */
-.repeaters {
-  padding: 80px 0;
-}
-
-.repeaters h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  color: var(--text-dark);
-}
-
 .repeater-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -92,8 +81,6 @@
   color: white;
   padding: 15px 20px;
   margin: 0;
-  font-size: 1.3rem;
-  line-height: 1.4;
 }
 
 .repeater-info {
@@ -147,15 +134,7 @@
 
 /* Map Section */
 .map-section {
-  padding: 80px 0;
   background: var(--light-bg);
-}
-
-.map-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  color: var(--text-dark);
 }
 
 .map-container {
@@ -216,4 +195,62 @@
   .map {
     height: 500px;
   }
+}
+
+
+/* Contact Section */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.contact-card {
+  background: white;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border-left: 5px solid var(--ifm-color-primary);
+}
+
+.contact-card h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.contact-card ol {
+  margin-left: 20px;
+}
+
+.contact-card ol li {
+  margin: 10px 0;
+  color: var(--text-dark);
+}
+
+/* MeshCore Channel styles */
+.channel-hash {
+  background: #f0f5ff;
+  border: 1px solid #d0e0ff;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.channel-hash code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  word-break: break-all;
+}
+
+.channel-note {
+  font-style: italic;
+  color: var(--text-light);
+  margin-top: 15px;
+  font-size: 0.9rem;
 }
