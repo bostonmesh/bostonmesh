@@ -14,7 +14,7 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <main>
-        <iframe src='test_page_3.html' width='100%'></iframe> 
+        <iframe src='test_page.html' width='100%'></iframe> 
       </main>
     </Layout>
   );

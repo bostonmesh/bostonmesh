@@ -1,0 +1,219 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --border-radius: 10px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --text-light: #666;
+  --dark-bg: #1a1a1a;
+  --light-bg: #f5f5f5;
+  --primary-color: #1565C0;
+  --secondary-color: #4CAF50;
+  --accent-color: #FF5722;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.hero .button {
+  margin-right: 2rem;
+}
+
+.meshcore {
+  .container {
+    margin: 3rem;
+
+    h2 {
+
+      text-align: center;
+    }
+  }
+}
+
+
+/* Repeaters Section */
+.repeaters {
+  padding: 80px 0;
+}
+
+.repeaters h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--text-dark);
+}
+
+.repeater-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.repeater-card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.repeater-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--ifm-color-primary);
+}
+
+.repeater-card h3 {
+  background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-darker));
+  color: white;
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.repeater-info {
+  padding: 20px;
+}
+
+.repeater-info p {
+  margin: 8px 0;
+  color: var(--text-dark);
+}
+
+/* Repeater info sections */
+.repeater-info .info-section {
+  padding: 8px 0;
+}
+
+.repeater-info hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 10px 0;
+}
+
+.repeater-info .radio-section p,
+.repeater-info .operator-section p,
+.repeater-info .status-section p {
+  padding-left: 4px;
+}
+
+.repeater-info strong {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.status-active {
+  background: #6c757d;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.status-planned {
+  background: #FFC107;
+  color: #333;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Map Section */
+.map-section {
+  padding: 80px 0;
+  background: var(--light-bg);
+}
+
+.map-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--text-dark);
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.map {
+  height: 700px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.map-legend {
+  background: white;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  width: auto;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.map-legend h4 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.legend-text {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .map-legend {
+    width: 100%;
+  }
+
+  .map {
+    height: 500px;
+  }
+}

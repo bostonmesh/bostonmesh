@@ -40,6 +40,21 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    'docusaurus-plugin-sass',
+  ],
+
+  stylesheets: [
+    'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+  ],
+
+  scripts: [
+    {
+      src: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+      defer: true
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -68,7 +83,10 @@ const config = {
         //   onUntruncatedBlogPosts: 'warn',
         // },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            require.resolve('./src/css/custom.scss'),
+            // 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+          ]
         },
       }),
     ],
@@ -96,7 +114,7 @@ const config = {
             position: 'left',
             label: 'Resources',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/meshcore', label: 'Meshcore', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',

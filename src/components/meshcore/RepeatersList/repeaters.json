@@ -1,0 +1,230 @@
+[
+  {
+    "repeaterName": "Cambridgeport - 001",
+    "hardwareName": "Station G2",
+    "antenna": "Omni Directional 2dBi",
+    "locationFriendlyName": "MIT Campus Area",
+    "locationLatLong": [
+      42.359054,
+      -71.100134
+    ],
+    "elevationFeet": 197,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "CCMN",
+    "pubkey": "dfbfe7ac10d14063848b4e350a715ea583ecb361a6ddabdb375d9eecc959de04",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "Cambridgeport - 002",
+    "hardwareName": "Station G2",
+    "antenna": "Omni Directional 2dBi",
+    "locationFriendlyName": "MIT Campus Area",
+    "locationLatLong": [
+      42.359996,
+      -71.10171
+    ],
+    "elevationFeet": 197,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "CCMN",
+    "pubkey": "6484218dc3f4a61f5109871ed5581ff928d6a5c12129e86fae8dfd56e974c786",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "CambridgHarvard - 001",
+    "hardwareName": "Station G2",
+    "antenna": "Omni Directional 2dBi",
+    "locationFriendlyName": "Harvard Square (Story St)",
+    "locationLatLong": [
+      42.37373,
+      -71.12211
+    ],
+    "elevationFeet": 102,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "CCMN",
+    "pubkey": "59e2ed46234a8b75425816c938c93a4840c1dd4373c5423053f40688586b8a7a",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "ARL - IceSkating - 001",
+    "hardwareName": "Station G2",
+    "antenna": "Omni Directional 5dBi",
+    "locationFriendlyName": "Morningside/Hills Hill/Ice Skating Rink ",
+    "locationLatLong": [
+      42.424705,
+      -71.1706
+    ],
+    "elevationFeet": 186,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "CCMN",
+    "pubkey": "a5b1ed3465559590f883da6d44476b6a7fc1412e5e1243fc81df27669f62869a",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "ARL - ParkCircle - 001",
+    "hardwareName": "Station G2",
+    "antenna": "Omni Directional 5dBi",
+    "locationFriendlyName": "Park Circle Water Tower",
+    "locationLatLong": [
+      42.41608,
+      -71.17981
+    ],
+    "elevationFeet": 126,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "CCMN",
+    "pubkey": "ce6d2fbc7568b466070e7f80a502b8e8718124ffe16a441862407aed678ec7a9",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "ARL - Heights - 001",
+    "hardwareName": "Station G2",
+    "antenna": "Omni Directional 2.5dBi",
+    "locationFriendlyName": "Arlington Heights",
+    "locationLatLong": [
+      42.39974,
+      -71.12443
+    ],
+    "elevationFeet": 287,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "CCMN",
+    "pubkey": "b27cf7bf3fed65e6f25add42332561ebe000ce27531eb14eccedc02f73dc021b",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "ARL - HighSchool - 001",
+    "hardwareName": "Station G2",
+    "antenna": "Omni Directional 2.5dBi",
+    "locationFriendlyName": "Arlington HighSchool",
+    "locationLatLong": [
+      42.41572,
+      -71.16535
+    ],
+    "elevationFeet": 102,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "CCMN",
+    "pubkey": "f9b09d45a45a8e875a3742ea61b7674e993ae4da1508cad2cb26f33c8543c462",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "LEX - GreatMeadow - 001",
+    "hardwareName": "Station G2",
+    "antenna": "Omni Directional 5dBi",
+    "locationFriendlyName": "Lexington Great Meadow Arlington Side",
+    "locationLatLong": [
+      42.430301,
+      -71.196018
+    ],
+    "elevationFeet": 209,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "CCMN",
+    "pubkey": "a09b6f3be9a44e5c2fc7b09aa8af70a0940bf1f7938db66a557a1432437b3070",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "Brookline Village - 001",
+    "hardwareName": "RAK 4631",
+    "antenna": "Omni Directional 2.5dBi",
+    "locationFriendlyName": "Brookline Village",
+    "locationLatLong": [
+      42.331797,
+      -71.117744
+    ],
+    "elevationFeet": 40,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "CCMN",
+    "pubkey": "fd46ebac9a9bf174f9a3feea69ae44eeead502e0f89f14ccb462f52f45c2eda9",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "Lawrence Hill",
+    "hardwareName": "Station G2",
+    "antenna": "Omni Directional 5dBi",
+    "locationFriendlyName": "Prospect Hill",
+    "locationLatLong": [
+      42.70096,
+      -71.18209
+    ],
+    "elevationFeet": 10,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "Zaos",
+    "pubkey": "6b0507555d25833e9ae822a0dca13dbad13f9d8fc2d711ddc1ab99dc1114c18e",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "Ceylon Musk",
+    "hardwareName": "RAK Wisblock",
+    "antenna": "Omni Directional 2dBi",
+    "locationFriendlyName": "State House - 130 Bowdoin St",
+    "locationLatLong": [
+      42.35866,
+      -71.06263
+    ],
+    "elevationFeet": 560,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "OOLONGfellowBridge",
+    "pubkey": "2823253a9545850eb619687df91a9d8ed22a38a34c5ba667b6accf6873d23101",
+    "status": "Active"
+  },
+  {
+    "repeaterName": "OrangePeacoat",
+    "hardwareName": "Heltec V3",
+    "antenna": "Omni Directional 2dBi",
+    "locationFriendlyName": "State House - 15 Temple St",
+    "locationLatLong": [
+      42.36076,
+      -71.06388
+    ],
+    "elevationFeet": 131,
+    "presetName": "USA/Canada (Recommended)",
+    "frequency": "910.525 MHz",
+    "bandwidth": "62.5 kHz",
+    "spreadingFactor": 7,
+    "codingRate": 5,
+    "operator": "OOLONGfellowBridge",
+    "pubkey": "97997f04bca1812622e73b981646dc02f7aed1e23921af9d2bffdd0cade337ad",
+    "status": "Active"
+  }
+]
