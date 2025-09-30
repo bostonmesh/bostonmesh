@@ -42,7 +42,11 @@ Header and footer settings can be configed via `docusaurus.config.js`. Header se
 
 ## Updating the home page
 
-The home page is powered by `src/pages/index.js`. We can modify the html contained within that file to update the home page. 
+The home page is powered by `src/pages/index.js`. We can modify the html (actually JSX) contained within that file to update the home page. 
+
+## Updating styling
+
+You can update styles by modifying `src/css/custom.scss`.
 
 ## Creating new pages
 
