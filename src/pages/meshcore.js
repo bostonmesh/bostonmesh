@@ -20,11 +20,6 @@ export default function Home() {
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"
-              to="#repeaters">
-              View repeaters
-            </Link>
-            <Link
-              className="button button--secondary button--lg"
               to="#map-section">
               View map
             </Link>
