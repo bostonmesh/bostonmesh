@@ -38,6 +38,23 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.header-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+
+  &.github { background-image: url('/img/github-mark.png'); }
+  &.discord {
+    background-image: url('/img/Discord-Symbol-Blurple.png');
+    position: relative;
+    top: 4px;
+  }
+
+  .iconExternalLink_nPIU { display: none; }
+}
+
 .hero .button {
   margin-right: 2rem;
 }

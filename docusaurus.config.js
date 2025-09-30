@@ -124,11 +124,18 @@ const config = {
             label: 'Meshtastic',
             position: 'left'
           },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          {
+            href: 'https://discord.gg/MUVASVEEES',
+            position: 'right',
+            className: 'header-icon discord',
+            'aria-label': 'Discord server',
+          },
+          {
+            href: 'https://github.com/bostonmesh',
+            position: 'right',
+            className: 'header-icon github',
+            'aria-label': 'GitHub repository',
+          },
         ],
       },
       footer: {
