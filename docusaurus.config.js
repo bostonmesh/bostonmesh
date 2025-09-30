@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Boston Mesh',
-  tagline: 'Dinosaurs are cool',
+  tagline: '',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -114,7 +114,16 @@ const config = {
             position: 'left',
             label: 'Resources',
           },
-          {to: '/meshcore', label: 'Meshcore', position: 'left'},
+          {
+            to: '/meshcore',
+            label: 'Meshcore',
+            position: 'left'
+          },
+          {
+            to: '/meshtastic',
+            label: 'Meshtastic',
+            position: 'left'
+          },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
@@ -139,7 +148,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `© ${new Date().getFullYear()} Greater Boston Mesh Network. Built with ❤️ for resilient communications.`,
       },
       prism: {
         theme: prismThemes.github,

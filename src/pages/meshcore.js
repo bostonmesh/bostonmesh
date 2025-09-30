@@ -16,23 +16,22 @@ export default function Home() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <Heading as="h1" className="hero__title">
-            {siteConfig.title}
+            Meshcore
           </Heading>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"
-              to="/meshcore">
+              to="#repeaters">
               View repeaters
             </Link>
             <Link
               className="button button--secondary button--lg"
-              to="/meshcore">
+              to="#map-section">
               View map
             </Link>
             <Link
               className="button button--secondary button--lg"
-              to="/meshcore">
+              to="#contact">
               Get connected
             </Link>
           </div>
@@ -43,7 +42,8 @@ export default function Home() {
           <div className="container">
             <h2>What is Meshcore?</h2>
             <div className="about-description">
-              <p>MeshCore is a multi-platform system for enabling secure text-based communications utilizing LoRa radio hardware. It can be used for Off-Grid Communication, Emergency Response & Disaster Recovery, Outdoor Activities, Tactical Security including law enforcement, private security and also IoT sensor networks. <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md" target="_blank" rel="noopener">Learn more about MeshCore →</a></p>
+              <p>MeshCore is a multi-platform system for enabling secure text-based communications utilizing LoRa radio hardware. It can be used for Off-Grid Communication, Emergency Response & Disaster Recovery, Outdoor Activities, Tactical Security including law enforcement, private security and also IoT sensor networks.</p>
+              <p><a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md" target="_blank" rel="noopener">Learn more about MeshCore →</a></p>
             </div>
           </div>
         </section>

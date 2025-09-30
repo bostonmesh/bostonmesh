@@ -1,50 +1,52 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Meshcore',
+    url: '/meshcore',
+    img: require('@site/static/img/meshcore.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Meshtastic',
+    url: '/meshtastic',
+    img: require('@site/static/img/meshtastic.jpg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Getting Started',
+    url: '/docs/Introduction',
+    img: require('@site/static/img/generic_mesh.jpg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({img, title, description, altText, url}) {
   return (
     <div className={clsx('col col--4')}>
+      <a href={useBaseUrl(url)}>
+
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
+        <img src={img}></img>
         <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
       </div>
+
+      </a>
+      <div className="text--center padding-horiz--md">
+        <p>{description}</p>
+        </div>
     </div>
   );
 }

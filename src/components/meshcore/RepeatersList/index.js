@@ -23,7 +23,7 @@ export default function RepeatersList() {
         </div>
       </section>
 
-      <section id="map-section" className="map-section">
+      <section id="map-section" className="map-section light-bg">
         <div className="container">
           <h2>Network Coverage Map</h2>
           <div className="map-container">

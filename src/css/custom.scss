@@ -42,15 +42,25 @@
   margin-right: 2rem;
 }
 
-.meshcore {
-  section {
-    padding: 3rem;
+section {
+  padding: 3rem;
+  text-align: center;
 
-  }
 
-  h2 {
-    text-align: center;
+  p {
+    max-width: 50rem;
+    margin: auto;
   }
+}
+
+section.light-bg {
+  background: var(--light-bg);
+}
+
+.discord-button {
+  margin-top: 2rem;
+  background-color: #5965f2;
+  color: white;
 }
 
 
@@ -133,10 +143,6 @@
 }
 
 /* Map Section */
-.map-section {
-  background: var(--light-bg);
-}
-
 .map-container {
   display: flex;
   flex-direction: column;
