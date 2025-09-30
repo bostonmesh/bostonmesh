@@ -45,14 +45,16 @@ const config = {
   ],
 
   stylesheets: [
-    'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+    // include any external stylesheets here (e.g. for an external tool we are using)
+
   ],
 
   scripts: [
-    {
-      src: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
-      defer: true
-    },
+    // include any external stylesheets here (e.g. for an external tool we are using)
+    // {
+    //   src: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+    //   defer: true
+    // },
   ],
 
   presets: [

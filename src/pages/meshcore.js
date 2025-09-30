@@ -2,7 +2,6 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import RepeatersList from '@site/src/components/meshcore/RepeatersList';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -48,7 +47,14 @@ export default function Home() {
           </div>
         </section>
 
-        <RepeatersList />
+
+        <section id="map-section" className="map-section">
+          <div className="container">
+            <h2>Network Coverage Map</h2>
+            <iframe id="meshcore-map-iframe" src="https://map.w0z.is/?lat=42.38492&lng=-71.19312&zoom=12" title="description_of_embedded_content" width="100%" height="600"></iframe>
+          </div>
+        </section>
+
 
         {/* Contact Section */}
         <section id="contact" class="contact">
@@ -79,36 +85,6 @@ export default function Home() {
                     <td>5</td>
                   </tr>
                 </table>
-              </div>
-              <div class="contact-card">
-                <h3>Getting Started</h3>
-                <ol>
-                  <li><strong>Obtain compatible LoRa hardware:</strong>
-                    <ul>
-                      <li>
-                        <a href="https://wiki.uniteng.com/en/meshtastic/station-g2" target="_blank" rel="noopener">Station G2</a> - Best and most powerful Base/Home Repeater (or client) - 20W input power
-                      </li>
-                      <li>
-                        <a href="https://wiki.uniteng.com/meshtastic/nano-g2-ultra" target="_blank" rel="noopener" >Nano G2 Ultra</a> - (recommended!) Most powerful "no external antenna" client/great for in-pocket (5 days of battery)
-                      </li>
-                      <li>
-                        <a href="https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html" target="_blank" rel="noopener" >Wio Tracker L1
-                        Pro-E</a> - Rugged powerful "all around" $45 client, rugged (5 days battery)
-                      </li>
-                      <li>
-                        <a href="https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66" target="_blank" rel="noopener">WisMesh
-                        Tag-E</a> - (recommended!) Credit card-sized, very powerful directional client, for hiking/travel/IP66 waterproof (~5 days of battery)
-                      </li>
-                      <li>
-                        <a href="https://store.rakwireless.com/products/wisblock-lora-starter-kit"
-                        target="_blank" rel="noopener">RAKWireless WisBlock Mini</a> - Low powered Serial nodes, Solar nodes, Bots/Automation
-                      </li>
-                    </ul>
-                  </li>
-                  <li><strong>Install MeshCore firmware:</strong> <a href="https://flasher.meshcore.co.uk/" target="_blank" rel="noopener" >MeshCore Flasher</a></li>
-                  <li><strong>Configure radio settings</strong> (see Radio Settings)</li>
-                  <li><strong>Join the network!</strong></li>
-                </ol>
               </div>
               <div class="contact-card">
                 <h3>MeshCore Channel</h3>
