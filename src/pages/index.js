@@ -44,6 +44,8 @@ export default function Home() {
           </div>
         </section>
         <HomepageFeatures />
+
+        <a rel="me" href="https://mastodon.social/@BostonMesh"></a>
       </main>
     </Layout>
   );
