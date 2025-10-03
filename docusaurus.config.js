@@ -100,7 +100,8 @@ const config = {
       // Replace with your project's social card
       image: 'img/social-card.jpg',
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode:	'light',
+        respectPrefersColorScheme: false,
         disableSwitch: true
       },
       navbar: {
