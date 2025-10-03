@@ -10,8 +10,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Meshcore - ${siteConfig.title}`}
+    >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <Heading as="h1" className="hero__title">
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </header>
       <main className="meshcore">
-        <section id="repeaters" className="repeaters">
+        <section id="repeaters" className="repeaters light-bg">
           <div className="container">
             <h2>What is Meshcore?</h2>
             <div className="about-description">
@@ -46,13 +46,13 @@ export default function Home() {
         <section id="map-section" className="map-section">
           <div className="container">
             <h2>Network Coverage Map</h2>
-            <iframe id="meshcore-map-iframe" src="https://map.w0z.is/?lat=42.38492&lng=-71.19312&zoom=12" title="description_of_embedded_content" width="100%" height="600"></iframe>
+            <iframe id="meshcore-map-iframe" src="https://map.w0z.is/embed/map?lat=42.38492&lng=-71.19312&zoom=12" title="description_of_embedded_content" width="100%" height="600"></iframe>
           </div>
         </section>
 
 
         {/* Contact Section */}
-        <section id="contact" class="contact">
+        <section id="contact" class="contact light-bg">
           <div class="container">
             <h2>Join the Network</h2>
             <div class="contact-grid">

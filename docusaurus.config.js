@@ -153,7 +153,7 @@ const config = {
               },
               {
                 label: 'Github',
-                href: 'https://github.com/bostonmesh',
+                href: 'https://github.com/bostonmesh/bostonmesh',
               },
             ],
           },
