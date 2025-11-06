@@ -9,14 +9,14 @@ A solar-powered mesh networking node designed for critical infrastructure locati
 
 | Item | Qty | Price (USD) | Link | Notes |
 |------|-----|-------------|------|-------|
-| SMA Adapter Set | 1 | $2 | [Amazon](https://www.amazon.com/dp/B0FBWVY4W5) | Needed for antenna/filter connections |
-| SMA to N-Type Adapater | 1 | $6 | [Amazon](https://www.amazon.com/dp/B0B9RXN26M) | Needed for antenna/filter connections |
-| Solar Panels | 3 | $30 ea | [Amazon](https://www.amazon.com/dp/B0C4L1L1BD) | Power source |
+| SMA Adapter Set (needed if using filter) | 1 | $2 | [Amazon](https://www.amazon.com/dp/B0FBWVY4W5) | Needed for antenna/filter connections |
+| SMA to N-Type Adapater (needed if using filter) | 1 | $6 | [Amazon](https://www.amazon.com/dp/B0B9RXN26M) | Needed for antenna/filter connections |
+| Solar Panels | 3 | $10 ea | [Amazon](https://www.amazon.com/dp/B0C4L1L1BD) | Power source |
 | ASA Filament (~500g) | 1 | $12 | [Amazon](https://www.amazon.com/dp/B09DKPYYBP) | ASA for weather resistant enclosure |
-| External Antenna | 1 | $15 | [Amazon](https://www.amazon.com/dp/B08H8J6ZV6) | For improved signal |
+| External Antenna | 1 | $15 | [Rokland](https://store.rokland.com/products/4-dbi-helium-hotspot-fiberglass-outdoor-antenna-bracket-mount-for-rak-bobcat-nebra-sensecap?srsltid=AfmBOoq_foU2jZxmKBh5mdKB6PcmICpIivgYj3i6KTLgXmFYjIWcdAic) | For improved signal |
 | Washtastic (LoRA controller) | 1 | $30 | – | Main Controller  |
 | Battery Pack | 1 | $10 (est) | – | Reclaimed 18650 cells |
-| Bandpass Filter | 1 | $10 | – | To reduce noise and improve RF performance (Made by Zaos) |
+| Cavity Filter (optional) | 1 | $65 | [Acasom](https://acasom.com/products/915mhz-5-types-cavity-filter-for-helium-network-filter-waterproof-lora-indoor-use-high-out-band-rejection) | To reduce noise and improve RF performance|
 
 ---
 
@@ -48,5 +48,6 @@ The main use-case of this node is for hill tops with good LOS. The Washtastic ha
 - **Estimated total cost:** ~$120 (depending on battery pack source).
 - Parts can be substituted depending on availability.
 - Outdoor use requires ASA filament for weather resistance.
+- Washtastics are 30$ if you get em via a group order. Ordering them in singles makes em 85$ each and a tough purchase. 
 
 ---
