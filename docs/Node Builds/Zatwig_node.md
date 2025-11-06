@@ -9,7 +9,7 @@ A solar-powered mesh networking node designed for infrastructure locations.
 
 | Item | Qty | Price (USD) | Link | Notes |
 |------|-----|-------------|------|-------|
-| Antenna | 1 | $2 | [Ebyte]([https://www.amazon.com/dp/B0FBWVY4W](https://ebyteiot.com/products/2pcs-bendable-rubber-rod-antenna-cdebyte-230-470-868-915mhz-ipex-1-3dbi-wide-frequency-band-small-vswr-90foldable-antenna-tx230-jks-ipx20?) | basic sleeved dipole 2.5dbi|
+| Antenna | 1 | $2 | [Ebyte]((https://ebyteiot.com/products/2pcs-bendable-rubber-rod-antenna-cdebyte-230-470-868-915mhz-ipex-1-3dbi-wide-frequency-band-small-vswr-90foldable-antenna-tx230-jks-ipx20?) | basic sleeved dipole 2.5dbi|
 | Solar Panels | 3 | $2 ea | [Amazon]([https://www.amazon.com/dp/B0C4L1L1BD](https://www.amazon.com/dp/B0B51HZ9D9?ref=ppx_yo2ov_dt_b_fed_asin_title)) | Power source |
 | ASA Filament (~200g) | 1 | $5 | [Amazon](https://www.amazon.com/dp/B09DKPYYBP) | ASA for weather resistant enclosure |
 | Rak Wisblock| 1 | $30 | [Rokland](https://store.rokland.com/products/rakwireless-mini-meshtastic-starter-kit-us915-rak19003-4631-sku-115093?) | Main Controller, cheaper to buy atleast 10, massive discount.|
