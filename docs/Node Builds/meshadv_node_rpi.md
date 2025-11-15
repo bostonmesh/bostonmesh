@@ -34,12 +34,27 @@ This document assumes the user has fundamental knowledge of using a Linux OS.
 - Insert the MicroSD card into the Pi and power it up.
 - Once the Pi boots, locate it on your network and SSH into it with the credentials you set in the Imager.
 - Update the Pi using:  
-  `sudo apt update && sudo apt upgrade -y`
+```
+sudo apt update && sudo apt upgrade -y
+```
+ - Next, we need to make sure the dependisies are installed.
+```
+sudo apt install git bc -y
+```
 - Next, install the configuration for the MeshADV board. We will use the  
-  [Meshtasticd-Configuration-Tool](https://github.com/chrismyers2000/Meshtasticd-Configuration-Tool) for easier setup.
+  [Meshtasticd-Configuration-Tool](https://github.com/chrismyers2000/Meshtasticd-Configuration-Tool) for easier setup of the required changes for MeshADV.
 - Download and run the script `meshtasticd_config_tool_CLI.py`, following instructions on the GitHub page.
 - In the Configuration Tool, run options **2, 3, and 4**.
 
 ![Configuration-Tool](assets/meshadv_node_rpi/meshconfig-tool-cli-setup.png)
 
 - Reboot the Pi after closing the configuration tool, then log back in via SSH.
+- Next we need to clone the GitHub [pyMC_Repeater](https://github.com/rightup/pyMC_Repeater)
+```
+git clone https://github.com/rightup/pyMC_Repeater.git
+cd pyMC_Repeater
+```
+- Next we need to install the repeater software.
+```
+sudo bash deploy.sh
+```
