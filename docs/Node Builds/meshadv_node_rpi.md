@@ -39,7 +39,7 @@ We will be using the WaveShare PoE hat in this build. You can also use a USB-C P
 - OPTIONAL: Solder the GPS module to the MeshADV board. The recommended module is the ATGM336H listed in the BOM.  
 ![GPS Module](assets/meshadv_node_rpi/meshadv-gps.png)
 
-- Once soldered, make sure to jumper the `3.3v` and `J3` pins on the board to power the GPS.  
+- Once soldered, make sure to jumper the `3.3v` and `J3` pins on the board to power the GPS module.  
 ![GPS Module Power](assets/meshadv_node_rpi/meshadv-gps-power.png)
 
 - Be careful that the GPS antenna does not short the battery soldered onto the GPS module.  
@@ -53,7 +53,7 @@ We will be using the WaveShare PoE hat in this build. You can also use a USB-C P
 
 ---
 
-## ⚡ Software Build Instructions
+## 🚀 Software Build Instructions
 
 - Image the MicroSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/) with **Raspberry Pi OS Lite (64-bit)**. Configure custom settings such as hostname, location, and user login. *(Enable Wi-Fi if needed.)*
 
@@ -130,7 +130,7 @@ Next steps:
 
 ---
 
-## pyMC Repeater Configuration
+## ⚙️ pyMC Repeater Configuration
 
 To change the configuration of the repeater, edit the `config.yaml` file.
 
