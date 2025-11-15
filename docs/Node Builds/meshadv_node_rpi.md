@@ -28,7 +28,9 @@ This document assumes the user has fundamental knowledge of using a Linux OS.
 
 ---
 
-## ⚡ Build Instructions
+## ⚡ Hardware Build Instructions
+
+## ⚡ Software Build Instructions
 
 - Image the MicroSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/) with **Raspberry Pi OS Lite (64-bit)**. Configure custom settings such as hostname, location, and user login. *(Set up Wi-Fi if you plan to use it instead of Ethernet.)*
 - Insert the MicroSD card into the Pi and power it up.
@@ -58,3 +60,4 @@ cd pyMC_Repeater
 ```
 sudo bash deploy.sh
 ```
+
