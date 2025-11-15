@@ -27,6 +27,8 @@ The main use case of this node is for building a static home base or remote depl
 
 This document assumes the user has fundamental knowledge of using a Linux OS.
 
+This document includes instructions for adding the GPS module, but does not provide guidance on building a stratum-1 NTP server.
+
 ---
 
 ## ⚡ Hardware Build Instructions
