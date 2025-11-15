@@ -10,7 +10,7 @@ This document outlines the bill of materials (BOM) and setup for a MeshCore repe
 |------|-----|-------------|------|-------|
 | Antenna | 1 | $30 | [Amazon](https://www.amazon.com/dp/B0CWN7VHP3) | 5.8 dBi antenna. Any antenna with an N-Type male connector will work. |
 | U.FL to N-Type Female | 1 | $9 | [Amazon](https://www.amazon.com/dp/B0C8M77ZMW) | Connects the MeshADV to the antenna. |
-| ATGM336H GPS+BDS | 1 | $20 | [Amazon](https://www.amazon.com/dp/B09LQDG1HY) | Optional, if you want to make an NTP server as well. |
+| ATGM336H GPS+BDS | 1 | $20 | [Amazon](https://www.amazon.com/dp/B09LQDG1HY) | Optional, if you want to build an NTP server as well. |
 | MeshAdv Pi Hat v1.1 | 1 | $? | [Etsy](https://www.etsy.com/listing/1849074257/meshadv-pi-hat-v11-fully-assembled-1) | Currently sold out at the time of writing. PCB is available on [GitHub](https://github.com/chrismyers2000/MeshAdv-Pi-Hat/tree/main/V1.1/IPEX/PCB) to order through [JLCPCB](https://jlcpcb.com/). |
 | Raspberry Pi 4B – 2GB | 1 | $45 | [PiShop](https://www.pishop.us/product/raspberry-pi-4-model-b-2gb/) | 2GB is more than enough for MeshCore and leaves resources for other services. |
 | 32GB MicroSD Card | 1 | $14 | [Amazon](https://www.amazon.com/dp/B084CJLNM4) | Max Endurance MicroSD recommended for long runtime. |
@@ -41,10 +41,10 @@ We will be using the WaveShare PoE hat in this build. You can also use a USB-C P
 - OPTIONAL: Solder the GPS module to the MeshADV board. The recommended module is the ATGM336H listed in the BOM.  
 ![GPS Module](assets/meshadv_node_rpi/meshadv-gps.png)
 
-- Once soldered, make sure to jumper the `3.3v` and `J3` pins on the board to power the GPS module.  
+- Once soldered, jumper the `3.3v` and `J3` pins on the board to power the GPS module.  
 ![GPS Module Power](assets/meshadv_node_rpi/meshadv-gps-power.png)
 
-- Be careful that the GPS antenna does not short the battery soldered onto the GPS module.  
+- Be careful that the GPS antenna does not short against the backup battery soldered onto the GPS module.  
 ![GPS Module Short](assets/meshadv_node_rpi/meshadv-gps-short.png)
 
 - Install the PoE hat and MeshADV, starting with the PoE hat and then stacking the MeshADV on top.  
@@ -92,43 +92,50 @@ cd pyMC_Repeater
 
 - Install the repeater software:
 ```
-sudo bash deploy.sh
+sudo bash manage.sh
 ```
 
-Follow along with the script, answering the questions asked. Make sure to use the following:
+- In the script menu, select **Install**.
+- After installation, it will ask you to configure the radio settings.
 
 ```
-=== Radio Configuration Setup ===
-Would you like to configure radio settings from community presets? (y/n) y
+=== pyMC Repeater Radio Configuration ===
 
+=== Step 0: Set Repeater Name ===
+
+Enter repeater name [mesh-repeater-01] (press Enter to keep):
+```
+
+Enter the name you would like and press Enter.
+
+```
 === Step 1: Select Hardware ===
-4) MeshAdv (meshadv)
 
+  1) Waveshare LoRa HAT (waveshare)
+  2) uConsole LoRa Module (uconsole)
+  3) MeshAdv Mini (meshadv-mini)
+  4) MeshAdv (meshadv)
+
+Select hardware (1-4):
+```
+
+Select **option 4**.
+
+```
 === Step 2: Select Radio Settings ===
-13) USA/Canada (Recommended)
+
+Fetching radio settings from API...
+Available Radio Settings:
 ```
 
-- Let the install finish. When successful, you will see:
+Select **13**:  
+`13) USA/Canada (Recommended)            ----> 910.525MHz / SF7 / BW62.5 / CR5`
 
-```
-=== Installation Complete ===
+- Let the install finish.
 
-Enabling and starting service...
-
-Service status:
-active
-✓ Service is running
-
-Next steps:
-1. Check live logs:
-   journalctl -u pymc-repeater -f
-
-2. Access web dashboard:
-   http://<your-pis-ip-address>:8000
-----------------------------------
-```
-
-- Open a new tab and go to `http://<your-pis-ip-address>:8000` — you should now see the pyMC Repeater page.
+After the install is finished, open a new browser tab and go to:  
+`http://<your-pis-ip-address>:8000`  
+You should now see the pyMC Repeater web interface.
 
 ---
 
@@ -141,8 +148,14 @@ To change the configuration of the repeater, edit the `config.yaml` file.
 sudo nano /etc/pymc_repeater/config.yaml
 ```
 
-In this file, you will be able to configure:
+Inside this file, you can configure:
 
-- Location.
-- Setting a public and private key (useful when replacing a node with this build).
-- Changing the Advert time frame.
+- Location  
+- Public and private key (useful when replacing an existing node)  
+- Advert timing interval  
+
+After changing the configuration, restart the service. This can be done using the same `manage.sh` script or via systemctl:
+
+```
+sudo systemctl restart pymc-repeater.service
+```
