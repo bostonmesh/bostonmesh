@@ -7,7 +7,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Meshcore - ${siteConfig.title}`}
@@ -46,7 +46,7 @@ export default function Home() {
         <section id="map-section" className="map-section">
           <div className="container">
             <h2>Network Coverage Map</h2>
-            <iframe id="meshcore-map-iframe" src="https://map.w0z.is/embed/map?lat=42.38492&lng=-71.19312&zoom=12" title="description_of_embedded_content" width="100%" height="600"></iframe>
+            <iframe id="meshcore-map-iframe" src="https://analyzer.letsme.sh/map?lat=42.3601&long=-71.0589&zoom=10" title="description_of_embedded_content" width="100%" height="600"></iframe>
           </div>
         </section>
 
