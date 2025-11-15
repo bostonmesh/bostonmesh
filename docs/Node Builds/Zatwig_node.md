@@ -14,7 +14,7 @@ A solar-powered mesh networking node designed for infrastructure locations.
 | ASA Filament (~200g) | 1 | $5 | [Amazon](https://www.amazon.com/dp/B09DKPYYBP) | ASA for weather resistant enclosure |
 | Rak Wisblock| 1 | $30 | [Rokland](https://store.rokland.com/products/rakwireless-mini-meshtastic-starter-kit-us915-rak19003-4631-sku-115093?) | Main Controller, cheaper to buy atleast 10, massive discount.|
 | Battery Cells | 2 | $5 (est) | – | Reclaimed 18650 cells, I used laptop packs I got for free|
-| Battery BMS | 1 | $<1 (est) | [Aliexpress](https://www.aliexpress.us/item/3256805216117590.html?) | 1s BMS board.|
+| Battery BMS | 1 | \<$1 (est) | [Aliexpress](https://www.aliexpress.us/item/3256805216117590.html?) | 1s BMS board.|
 | 1n5817 diodes| 3 | $1 (est) | [Amazon](https://www.amazon.com/dp/B079KDQQPD?ref=ppx_yo2ov_dt_b_fed_asin_title) | Makes the panels a bit more efficient. Not 100% required but recommended. |
 
 ---
