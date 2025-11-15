@@ -39,7 +39,7 @@ This document has been written with the impression that the user doing this inst
 Meshtasticd-Configuration-Tool](https://github.com/chrismyers2000/Meshtasticd-Configuration-Tool) for ease of use for the configuration.
 - Download and run the script `meshtasticd_config_tool_CLI.py` following the instructions on the GitHub Page.
 - In the Configuration Tool, run option 2, 3, 4.
-![Configuration-Tool](./meshcore-meshadv-pymc/meshconfig-tool-cli-setup.png)
+![Configuration-Tool](assets/meshadv_node_rpi/meshconfig-tool-cli-setup.png)
 - Reboot Pi after closing the config tool, and log back in via SSH.
 - 
 
