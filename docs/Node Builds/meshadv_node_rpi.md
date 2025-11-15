@@ -49,7 +49,7 @@ We will be using the WaveShare PoE hat in this build. You can also use a USB-C P
 ![Pi PoE Stack](assets/meshadv_node_rpi/meshadv-pi-poe-stack.png)
 
 - Connect the desired antenna.
-- Power up the Pi by plugging an Ethernet cable with PoE, you can use an injector or PoE network switch.
+- Power up the Pi by plugging in an Ethernet cable with PoE. You can use a PoE injector or a PoE-capable network switch.
 
 ---
 
@@ -92,3 +92,55 @@ cd pyMC_Repeater
 ```
 sudo bash deploy.sh
 ```
+
+Follow along with the script, answering the questions asked. Make sure to use the following:
+
+```
+=== Radio Configuration Setup ===
+Would you like to configure radio settings from community presets? (y/n) y
+
+=== Step 1: Select Hardware ===
+4) MeshAdv (meshadv)
+
+=== Step 2: Select Radio Settings ===
+13) USA/Canada (Recommended)
+```
+
+- Let the install finish. When successful, you will see:
+
+```
+=== Installation Complete ===
+
+Enabling and starting service...
+
+Service status:
+active
+✓ Service is running
+
+Next steps:
+1. Check live logs:
+   journalctl -u pymc-repeater -f
+
+2. Access web dashboard:
+   http://<your-pis-ip-address>:8000
+----------------------------------
+```
+
+- Open a new tab and go to `http://<your-pis-ip-address>:8000` — you should now see the pyMC Repeater page.
+
+---
+
+## pyMC Repeater Configuration
+
+To change the configuration of the repeater, edit the `config.yaml` file.
+
+- Using nano, edit the `config.yaml` file located in `/etc/pymc_repeater/`:
+```
+sudo nano /etc/pymc_repeater/config.yaml
+```
+
+In this file, you will be able to configure:
+
+- Location.
+- Setting a public and private key (useful when replacing a node with this build).
+- Changing the Advert time frame.
