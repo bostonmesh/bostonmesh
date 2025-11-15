@@ -84,7 +84,7 @@ sudo apt install git bc -y
 
 - Reboot the Pi after closing the configuration tool, then SSH back in.
 
-- Clone the pyMC_Repeater repository:
+- Clone the [pyMC_Repeater](https://github.com/rightup/pyMC_Repeater) repository:
 ```
 git clone https://github.com/rightup/pyMC_Repeater.git
 cd pyMC_Repeater
