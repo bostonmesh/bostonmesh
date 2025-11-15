@@ -1,4 +1,4 @@
-# Yellowcooln - MeshCore Raspberry Pi 1W Repeater
+# MeshCore Raspberry Pi 1W Repeater
 
 This document outlines the bill of materials (BOM) and setup for a MeshCore repeater using a Raspberry Pi and a MeshADV board or similar SX1262 radio. *(Only tested with MeshADV.)*
 
