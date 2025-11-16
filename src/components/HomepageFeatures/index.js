@@ -8,6 +8,8 @@ const FeatureList = [
     title: 'Meshcore',
     url: '/meshcore',
     img: require('@site/static/img/meshcore.png').default,
+    altText: 'Meshcore logo',
+    imgClassName: styles.meshcoreLogo,
     description: (
       <>
       </>
@@ -17,6 +19,7 @@ const FeatureList = [
     title: 'Meshtastic',
     url: '/meshtastic',
     img: require('@site/static/img/meshtastic.jpg').default,
+    altText: 'Meshtastic logo',
     description: (
       <>
       </>
@@ -26,6 +29,7 @@ const FeatureList = [
     title: 'Getting Started',
     url: '/docs/Introduction',
     img: require('@site/static/img/generic_mesh.jpg').default,
+    altText: 'Network graph artwork',
     description: (
       <>
       </>
@@ -33,13 +37,13 @@ const FeatureList = [
   },
 ];
 
-function Feature({img, title, description, altText, url}) {
+function Feature({img, title, description, altText, url, imgClassName}) {
   return (
     <div className={clsx('col col--4')}>
       <a href={useBaseUrl(url)}>
 
       <div className="text--center">
-        <img src={img}></img>
+        <img className={clsx(styles.featureImage, imgClassName)} src={img} alt={altText ?? `${title} graphic`}></img>
         <Heading as="h3">{title}</Heading>
       </div>
 

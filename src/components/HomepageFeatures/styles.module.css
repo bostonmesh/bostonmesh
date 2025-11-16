@@ -5,7 +5,14 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureImage {
+  width: 100%;
+  max-width: 280px;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+.meshcoreLogo {
+  background: linear-gradient(135deg, #0b2a3c, #003b5c);
+  padding: 32px;
 }
