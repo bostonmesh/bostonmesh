@@ -27,7 +27,7 @@ The main use case of this node is for building a static home base or remote depl
 
 This document assumes the user has fundamental knowledge of using a Linux OS.
 
-This document includes instructions for adding the GPS module, but does not provide guidance on building a stratum-1 NTP server.
+This document includes instructions for adding the GPS module, but does **not** provide guidance on building a stratum-1 NTP server.
 
 ---
 
@@ -73,24 +73,47 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install git bc -y
 ```
 
-- Install the configuration for the MeshADV board using the  
-  [Meshtasticd-Configuration-Tool](https://github.com/chrismyers2000/Meshtasticd-Configuration-Tool), which applies the required system changes.
+---
 
-- Download and run the file `meshtasticd_config_tool_CLI.py`, following the GitHub instructions.
+Next, we need to enable: `SPI`, `I²C`, and `UART`.
 
-- In the configuration tool, run options **2, 3, and 4**.
+We need to edit the `/boot/firmware/config.txt` file:
 
-![Configuration-Tool](assets/meshadv_node_rpi/meshconfig-tool-cli-setup.png)
+```
+sudo nano /boot/firmware/config.txt
+```
 
-- Reboot the Pi after closing the configuration tool, then SSH back in.
+Add the following to the bottom of the file:
 
-- Clone the [pyMC_Repeater](https://github.com/rightup/pyMC_Repeater) repository:
+```
+# Enable SPI
+dtparam=spi=on
+dtoverlay=spi0-0cs
+
+# Enable I2C
+dtparam=i2c_arm=on
+
+# Enable UART (For all Pi versions except Pi 5)
+enable_uart=1
+```
+
+Note: If doing this on a Pi 5, use this entry for UART instead:
+
+```
+dtoverlay=uart0
+```
+
+---
+
+Clone the [pyMC_Repeater](https://github.com/rightup/pyMC_Repeater) repository:
+
 ```
 git clone https://github.com/rightup/pyMC_Repeater.git
 cd pyMC_Repeater
 ```
 
-- Install the repeater software:
+Install the repeater software:
+
 ```
 sudo bash manage.sh
 ```
@@ -106,7 +129,7 @@ sudo bash manage.sh
 Enter repeater name [mesh-repeater-01] (press Enter to keep):
 ```
 
-Enter the name you would like and press Enter.
+Enter the name you prefer and press Enter.
 
 ```
 === Step 1: Select Hardware ===
@@ -135,7 +158,9 @@ Select **13**:
 
 After the install is finished, open a new browser tab and go to:  
 `http://<your-pis-ip-address>:8000`  
-You should now see the pyMC Repeater web interface.
+You should now see the pyMC Repeater web interface!
+
+![pyMC Dashboard](assets/meshadv_node_rpi/meshadv-pymc-dashboard.png)
 
 ---
 
@@ -143,7 +168,8 @@ You should now see the pyMC Repeater web interface.
 
 To change the configuration of the repeater, edit the `config.yaml` file.
 
-- Using nano, edit the `config.yaml` file located in `/etc/pymc_repeater/`:
+Using nano, edit the file located at:
+
 ```
 sudo nano /etc/pymc_repeater/config.yaml
 ```
@@ -154,7 +180,7 @@ Inside this file, you can configure:
 - Public and private key (useful when replacing an existing node)  
 - Advert timing interval  
 
-After changing the configuration, restart the service. This can be done using the same `manage.sh` script or via systemctl:
+After making changes, restart the service. This can be done using the `manage.sh` script or via systemctl:
 
 ```
 sudo systemctl restart pymc-repeater.service
