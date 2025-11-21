@@ -97,4 +97,5 @@ We believe in a future where:
 - The network is entirely volunteer-powered.  
 - Some nodes operate fully off-grid; others use mains or uplinks.  
 - All tools, software, and documentation are open-source or community-created.  
-- Respectful, collaborative participation keeps the mesh strong.
+- Respectful, collaborative participation keeps the mesh strong. 💪
+
