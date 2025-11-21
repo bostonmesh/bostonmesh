@@ -10,4 +10,4 @@ Below you’ll find detailed guides for different node builds:
 
 - [Zatwig – Meshcore Node Build](./Zatwig_node.md)
 - [MeshCore Raspberry Pi 1W Repeater](./yellowcooln_meshadv_mc_node_rpi.md)
-- [Zatree – Meshcore Node Build](./zattree_node.md)
+- [Zatree – Meshcore Node Build](./zatree_node.md)
