@@ -137,13 +137,16 @@ Enter the name you prefer and press Enter.
 
   1) Waveshare LoRa HAT (waveshare)
   2) uConsole LoRa Module (uconsole)
-  3) MeshAdv Mini (meshadv-mini)
-  4) MeshAdv (meshadv)
+  3) PiMesh-1W (USA) (pimesh-1w-usa)
+  4) PiMesh-1W (UK) (pimesh-1w-uk)
+  5) MeshAdv Mini (meshadv-mini)
+  6) MeshAdv (meshadv)
 
-Select hardware (1-4):
+Select hardware (1-6):
+
 ```
 
-Select **option 4**.
+Select **Option 6** or **Option 3** depending on which board you have.
 
 ```
 === Step 2: Select Radio Settings ===
