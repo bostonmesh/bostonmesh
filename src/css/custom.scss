@@ -264,6 +264,8 @@ section.light-bg {
   padding: 15px;
   margin: 15px 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .channel-hash code {
@@ -280,4 +282,27 @@ section.light-bg {
   color: var(--text-light);
   margin-top: 15px;
   font-size: 0.9rem;
+}
+
+/* Center the table itself */
+.radio-settings-table {
+  display: flex;
+  justify-content: center;   /* centers the table in the card */
+  width: 100%;
+}
+
+.radio-settings-table table {
+  width: auto;               /* shrink to content so you can see it's centered */
+  margin: 0 auto;
+}
+
+.discord-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.discord-icon {
+  flex-shrink: 0;
 }
