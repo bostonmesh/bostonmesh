@@ -104,12 +104,14 @@ export default function Home() {
               </div>
               <div class="contact-card">
                 <h3>Meshcore Channel</h3>
-                <p><strong>Boston Area Mesh Planning:</strong></p>
+                <p><strong>Meshcore Channel:</strong></p>
                 <div class="channel-hash">
-                  <code>0d187c4a636a02f4ef3bd1fb34f6c817</code>
+                  <code>Public</code>
                 </div>
-                <p>To add this channel, open the Channels tab, tap the three dots in the top-right, and select Add Channel. Choose Join a Private Channel, pick any name you like, then paste this key into the Secret Key (hex) field in the app.</p>
-                <p class="channel-note">This is the dedicated channel for the Greater Boston mesh network planning and coordination.</p>
+                <div class="channel-hash">
+                  <code>#test</code>
+                </div>
+                <p class="channel-note">Once you’re online, say hello in Public so we know you’re there! We also use #test for trying out nodes and testing paths.</p>
                 <p><strong>Discord Server:</strong></p>
                 <div className="channel-hash">
                   <a
