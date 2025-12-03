@@ -61,8 +61,8 @@ export default function Home() {
         <section id="map-section" className="map-section">
           <div className="container">
             <h2>Network Coverage Map</h2>
-            {/* <iframe id="meshcore-map-iframe" src="https://analyzer.letsme.sh/map?lat=42.3601&long=-71.0589&zoom=10" title="description_of_embedded_content" width="100%" height="600"></iframe> */}
-            <a href="https://analyzer.letsme.sh/map?lat=42.3601&long=-71.0589&zoom=10" target="_blank" rel="noopener noreferrer"><img src="/img/static-letsmesh.png" alt="BostonMesh Network Coverage Map" style={{ width: "100%", height: "auto", border: 0 }} /></a>
+            <iframe id="meshcore-map-iframe" src="https://analyzer.letsme.sh/map?lat=42.3601&long=-71.0589&zoom=10" title="description_of_embedded_content" width="100%" height="600"></iframe>
+            {/* <a href="https://analyzer.letsme.sh/map?lat=42.3601&long=-71.0589&zoom=10" target="_blank" rel="noopener noreferrer"><img src="/img/static-letsmesh.png" alt="BostonMesh Network Coverage Map" style={{ width: "100%", height: "auto", border: 0 }} /></a> */}
           </div>
         </section>
 
