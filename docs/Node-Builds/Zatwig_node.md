@@ -24,7 +24,7 @@ A solar-powered mesh networking node designed for infrastructure locations.
 ## 🛠️ Explanation
 
 The main use-case of this node is for hill tops that dont need alot of power to punch through things. Its only a 22dbm rak but even so can make good connections many km away given proper LOS. These shines well when you place alot of them to properly mesh. 
-I highly recommend upgrading the antenna to something like [this](https://store.rokland.com/collections/802-11ah-wi-fi-halow/products/4-dbi-helium-hotspot-fiberglass-outdoor-antenna-bracket-mount-for-rak-bobcat-nebra-sensecap) , It is a much better antenna. 
+I highly recommend upgrading the antenna to something like [this](https://store.rokland.com/collections/802-11ah-wi-fi-halow/products/4-dbi-helium-hotspot-fiberglass-outdoor-antenna-bracket-mount-for-rak-bobcat-nebra-sensecap) , It is a much better antenna, but youll need to use an N type adapter. 
 
 ---
 
@@ -38,7 +38,7 @@ I highly recommend upgrading the antenna to something like [this](https://store.
 6. Push the antenna through the bottom (takes some umph) and then attach the UFL. add a drop of hotglue for stability.
 7. hot glue the battery to the inside TOP of the zatwig body.
 8. Connect the battery and solar panels to the Rak. Ensure youve flashed it properly. 
-9. Nestle everything in the enclosure and screw shut. Uses M4 hex key bolts. if you are gentle it does not require any heat-serts. 
+9. Nestle everything in the enclosure and screw shut. Uses M5 hex key bolts. if you are gentle it does not require any heat-serts. 
 10. deploy yippie (I recommend wrapping the bottom of the antenna with antenna tape to prevent water ingress.) 
 
 ## 💡 Notes
