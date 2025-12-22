@@ -17,8 +17,8 @@ There are two supported push-agent projects. Pick the one that matches how you c
 Use these broker settings:
 
 - **Broker:** `mqttmc01.bostonme.sh`  
-- **Port:** `8883`
-- **TSL:** `false`
+- **Port:** `443`
+- **TSL:** `true`
 - **Transport:** WebSockets  
 - **Authentication:** Auth token enabled  - [Meshcore-decoder](https://github.com/michaelhart/meshcore-decoder)
 - **Token audience:** `mqttmc01.bostonme.sh`
