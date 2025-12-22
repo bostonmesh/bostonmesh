@@ -88,8 +88,8 @@ If your wardriving setup includes a **mobile repeater**, use the app’s **Ignor
 
 The service stores only:
 
-- the **location** you send to `#wardrive`
-- the **ID of the 1st hop repeater**
+- The **location** you send to `#wardrive`
+- The **ID of the 1st hop repeater**
 
 The Wardrive web app sends your location to `#wardrive` **and** to the service. Logging in the web app is stored **locally** on your device.
 
