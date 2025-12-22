@@ -1,7 +1,7 @@
 ---
 id: meshtastic-mqtt
 title: Meshtastic MQTT Server
-sidebar_label: Meshtastic MQTT Server
+sidebar_label: Meshtastic MQTT
 ---
 
 # Meshtastic MQTT Server
