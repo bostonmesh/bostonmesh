@@ -62,8 +62,10 @@ export default function Home() {
           <div className="container">
             <h2><a href="https://analyzer.letsme.sh/map?lat=42.36037&long=-71.18462&zoom=9">MeshCore Analyzer Map</a></h2>
             <iframe id="meshcore-map-iframe" src="https://analyzer.letsme.sh/map?lat=42.36037&long=-71.18462&zoom=9" title="meshcore-letsmesh-map" width="100%" height="600"></iframe>
-            <h2><a href="https://coveragemap.bostonme.sh/">Network Coverage Map</a></h2>
+            <h2><a href="https://coveragemap.bostonme.sh/">Coverage Map</a></h2>
             <iframe id="meshcore-map-iframe" src="https://coveragemap.bostonme.sh/" title="meshcore-coverage-map" width="100%" height="600"></iframe>
+            <h2><a href="https://live.bostonme.sh/">Live Packet Map</a></h2>
+            <iframe id="meshcore-map-iframe" src="https://live.bostonme.sh/" title="meshcore-live-packet-map" width="100%" height="600"></iframe>
           </div>
         </section>
 
