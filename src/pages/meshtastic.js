@@ -61,7 +61,7 @@ export default function Home() {
 
         <section id="map-section" className="map-section">
           <div className="container">
-            <h2>Network Coverage Map</h2>
+            <h2><a href="https://meshtastic.liamcottle.net/?lat=42.379345257263964&lng=288.52706909179693&zoom=10" target="_blank" rel="noopener noreferrer">Network Coverage Map</a></h2>
             <iframe id="meshcore-map-iframe" src="https://meshtastic.liamcottle.net/?lat=42.379345257263964&lng=288.52706909179693&zoom=10" title="description_of_embedded_content" width="100%" height="600"></iframe>
           </div>
         </section>
