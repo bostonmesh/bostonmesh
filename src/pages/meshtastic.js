@@ -53,7 +53,7 @@ export default function Home() {
             <h2>What is Meshtastic??</h2>
             <div className="about-description">
               <p>Meshtastic is an open-source, long-range mesh communication platform that links phones to low-cost LoRa radios for secure, off-grid text and data messaging. It’s ideal for backcountry group comms, community mesh networks, events, and low-power IoT sensor deployments where cellular or Wi-Fi aren’t available.</p>
-              <p><a href="https://meshtastic.org/" target="_blank" rel="noopener">Learn more about Meshtastic →</a></p>
+              <p><a href="https://meshtastic.org/" target="_blank" rel="noopener noreferrer">Learn more about Meshtastic →</a></p>
             </div>
           </div>
         </section>
