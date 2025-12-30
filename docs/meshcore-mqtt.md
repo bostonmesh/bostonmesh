@@ -5,7 +5,7 @@ sidebar_label: Meshcore MQTT
 ---
 # MeshCore MQTT Server
 
-Greater Boston Mesh runs its own MQTT server to populate our **[WarDrive Coverage Map](https://coveragemap.bostonme.sh/)**.
+Greater Boston Mesh runs its own MQTT server to populate our **[WarDrive Coverage Map](https://coveragemap.bostonme.sh/)** and **[Live Packet Map](https://live.bostonme.sh/)**.
 
 The coverage map requires coverage verification via MQTT, so if you are not connected to the Greater Boston Mesh, you’ll need to connect your node to the MQTT server.
 
