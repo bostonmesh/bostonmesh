@@ -111,6 +111,19 @@ After re-keying, you may need to update:
 
 ---
 
+### Rebuild kit (highly recommended)
+
+A solid extra step is to save a small “rebuild kit” for each repeater (in a password manager or somewhere safe):
+
+- **Private key** (the 128-hex string)
+- **Repeater name**
+- **Admin password**
+- **Lat/long** (if you publish location)
+
+If you ever need to reflash or replace a board, you can restore these values and bring it back up **identical to what’s in the field**, without guessing or reconfiguring from scratch.
+
+---
+
 ## Quick command summary
 
 ```txt
