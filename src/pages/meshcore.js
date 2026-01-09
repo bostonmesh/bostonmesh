@@ -65,7 +65,7 @@ export default function Home() {
             <h2><a href="https://coveragemap.bostonme.sh/" target="_blank" rel="noopener noreferrer">Coverage Map</a></h2>
             <iframe id="meshcore-map-iframe" src="https://coveragemap.bostonme.sh/" title="meshcore-coverage-map" width="100%" height="600"></iframe>
             <h2><a href="https://live.bostonme.sh/" target="_blank" rel="noopener noreferrer">Live Packet Map</a></h2>
-            <iframe id="meshcore-map-iframe" src="https://live.bostonme.sh/" title="meshcore-live-packet-map" width="100%" height="600"></iframe>
+            <iframe id="meshcore-map-iframe" src="https://live.bostonme.sh/?lat=42.42648&lon=-71.21613&zoom=10&layer=dark&history=off&heat=on&labels=off&nodes=on&legend=on&menu=on&units=mi&history_filter=0" title="meshcore-live-packet-map" width="100%" height="600"></iframe>
           </div>
         </section>
 
