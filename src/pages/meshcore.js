@@ -101,14 +101,6 @@ export default function Home() {
                       <td><strong>Coding Rate:</strong></td>
                       <td>5</td>
                     </tr>
-                    <tr>
-                      <td><strong>Advert (Zero Hop):</strong></td>
-                      <td>12 hours</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Advert (Flood):</strong></td>
-                      <td>48 hours</td>
-                    </tr>
                   </tbody>
                 </table>
                 </div>
