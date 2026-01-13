@@ -11,7 +11,9 @@ If two nodes in the same mesh share that prefix (example: `a3`), tools that rely
 
 This guide shows how to change your keypair so your repeater gets a **different 2-digit prefix**, using a **serial (USB) connection** and the MeshCore CLI command:
 
-**`set prv.key`**
+```
+set prv.key <PRIVATE_KEY_HERE>
+```
 
 ---
 
@@ -20,17 +22,17 @@ This guide shows how to change your keypair so your repeater gets a **different 
 - You see ambiguous node IDs (same 2-digit prefix) in neighbor lists / path info
 - Debugging range/links becomes annoying because two nodes “look” the same at a glance
 
----
-
 ## What you’ll need
 
-- A PC connected to the repeater via **USB serial**
-- The MeshCore web console.
-  - https://flasher.meshcore.co.uk/
-- A new keypair generated with a **non-colliding prefix**:
-  - https://gessaman.com/mc-keygen/
+* A PC connected to the repeater via **USB serial**
+* The **MeshCore web console**
 
----
+  * [https://flasher.meshcore.co.uk/](https://flasher.meshcore.co.uk/)
+* A new keypair with a **non-colliding prefix**, generated either:
+
+  * **In our Discord** using the bot command (it can generate a fresh keypair for you), or
+  * Via the web keygen: [https://gessaman.com/mc-keygen/](https://gessaman.com/mc-keygen/)
+
 
 ## Step 1: Check what prefixes are already in use nearby
 
@@ -49,8 +51,22 @@ In the Discord server, run the command `/open` in `#meshcore-bot` channel, and c
 
 ## Step 2: Generate a new keypair with your chosen prefix
 
-Go to:  
-https://gessaman.com/mc-keygen/
+You can generate a keypair either with our Discord bot **MeshBuddy** or via the web keygen.
+
+### Option A: Discord (MeshBuddy)
+
+In Discord, go to the `#meshcore-bot` channel and run:
+
+* `/keygen XX`
+
+Where `XX` is the first **two hex characters** of the prefix you want.
+
+Then copy the **private key** it returns.
+
+### Option B: Web keygen
+
+Go to:
+[https://gessaman.com/mc-keygen/](https://gessaman.com/mc-keygen/)
 
 1. Enter/select your **target prefix** (2 hex characters)
 2. Generate a keypair
@@ -70,7 +86,7 @@ https://flasher.meshcore.co.uk/
 3. Enter the command below to change the key.
 
 ```txt
-set prv.key <PASTE_128_HEX_PRIVATE_KEY_HERE>
+set prv.key <PRIVATE_KEY_HERE>
 ```
 
 ### Paste safety checklist
@@ -127,6 +143,6 @@ If you ever need to reflash or replace a board, you can restore these values and
 ## Quick command summary
 
 ```txt
-set prv.key <128_hex_private_key>
+set prv.key <private_key>
 reboot
 ```
