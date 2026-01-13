@@ -1,5 +1,5 @@
 ---
-id: meshtcore-wardrive
+id: meshcore-wardrive
 title: Meshcore Wardrive
 sidebar_label: Meshcore Wardrive
 ---

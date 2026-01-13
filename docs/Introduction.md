@@ -1,3 +1,8 @@
+---
+title: Introduction
+sidebar_position: 1
+---
+
 # Introduction
 
 Welcome to **Greater Boston Mesh** — a volunteer-led community building a resilient, off-grid communication network across **Massachusetts and the surrounding region**. While our name originated in the Boston area, our network now spans cities, towns, and rural areas across the entire state.
