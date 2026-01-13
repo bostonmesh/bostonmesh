@@ -112,8 +112,8 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
+            docId: 'Introduction',
             position: 'left',
             label: 'Resources',
           },
