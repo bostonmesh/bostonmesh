@@ -11,7 +11,9 @@ If two nodes in the same mesh share that prefix (example: `a3`), tools that rely
 
 This guide shows how to change your keypair so your repeater gets a **different 2-digit prefix**, using a **serial (USB) connection** and the MeshCore CLI command:
 
-**`set prv.key`**
+```
+set prv.key <PRIVATE_KEY_HERE>
+```
 
 ---
 
@@ -84,7 +86,7 @@ https://flasher.meshcore.co.uk/
 3. Enter the command below to change the key.
 
 ```txt
-set prv.key <PASTE_128_HEX_PRIVATE_KEY_HERE>
+set prv.key <PRIVATE_KEY_HERE>
 ```
 
 ### Paste safety checklist
@@ -141,6 +143,6 @@ If you ever need to reflash or replace a board, you can restore these values and
 ## Quick command summary
 
 ```txt
-set prv.key <128_hex_private_key>
+set prv.key <private_key>
 reboot
 ```
