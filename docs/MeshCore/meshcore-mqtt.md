@@ -23,5 +23,18 @@ Use these broker settings:
 - **Authentication:** Auth token enabled  - [Meshcore-decoder](https://github.com/michaelhart/meshcore-decoder)
 - **Token audience:** `mqttmc01.bostonme.sh`
 
-
 ---
+
+# LetsMesh MeshCore Packet Analyzer
+
+You can also upload your packets to the **[LetsMesh MeshCore Packet Analyzer](https://analyzer.letsmesh.net/)**.
+
+During setup with the software above, you’ll be asked if you want to upload to LetsMesh. **Say yes**, and set the **IATA code to `BOS`**. After that, it will ask if you’d also like to upload to a **custom MQTT server** (that’s where you’d enter the Greater Boston Mesh broker settings from above).
+
+This site shows **live packets by region**, so to view Greater Boston Mesh traffic you’ll want to select the **`BOS`** region. It’s a super handy “sanity check” for range, because it helps answer the big question:
+
+**Did my message get heard by the greater mesh… or only by my local node/nearby neighbors?**
+
+If you see your packets appearing in the feed, that’s strong proof your transmissions are making it out into the wider MeshCore ecosystem, not just echoing around locally.
+
+
