@@ -16,8 +16,7 @@ Our mission is simple: **create a decentralized communication system that contin
 
 Modern communication relies on infrastructure that can fail: cell towers, internet providers, fiber backbones, cloud platforms, and commercial data centers.
 
-A mesh network is different:  
-it uses small, low-power radios that connect **directly to each other**, forming a distributed network that continues to function during:
+A mesh network is different as it uses small, low-power radios that connect **directly to each other**, forming a distributed network that continues to function during:
 
 - power outages  
 - natural disasters  
@@ -65,7 +64,7 @@ All you need is:
 
 - a small weatherproof device (hand-sized)  
 - a safe place to mount it  
-- access to standard power  
+- access to standard power (or install with solar and a battery)
 
 No special networking, no licensing, and **no internet uplink is required for MeshCore nodes**.
 
@@ -92,7 +91,7 @@ If you're interested in hosting a node, please reach out to the person who intro
 - Whether you're interested in **MeshCore**, **Meshtastic**, or you're **not sure yet**
 - Any details about roof access, building height, or obstructions (optional)
 
-If you found this page independently or prefer to contact us directly, you can also join our public community Discord:= **https://discord.gg/MUVASVEEES**
+If you found this page independently or prefer to contact us directly, you can also join our public community Discord: **https://discord.gg/MUVASVEEES**
 
 A volunteer will follow up to help determine the best option for your location.
 
