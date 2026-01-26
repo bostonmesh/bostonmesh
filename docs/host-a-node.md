@@ -127,6 +127,8 @@ MeshCore and Meshtastic use licensed or lightly-licensed spectrum that is compat
 No.  
 Hosting a node does not require a ham radio license or any special certification.
 
+**However:** if you plan to run above **1W transmit power**, you do need to make sure you’re operating under the proper licensing/authorization for your region (for example, ham radio rules where applicable), because higher power can move you out of “license-free” territory.
+
 ---
 
 ### **Can the community help with installation?**
