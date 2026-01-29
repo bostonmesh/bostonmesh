@@ -50,7 +50,7 @@ Good fit if you:
 
 ### Repeater (MeshCore infrastructure)
 
-A repeater is an always-on node that helps extend coverage for others. Repeaters are critical to the health of the mesh, but they require more planning and coordination.
+A repeater is an always-on node that helps extend coverage for yourself and others. Repeaters are critical to the health of the mesh, but they require more planning and coordination.
 
 Good fit if you:
 - Have stable power (UPS backup, solar with batteries, etc.)
