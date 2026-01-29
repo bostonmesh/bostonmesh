@@ -52,7 +52,7 @@ Good fit if you:
 
 ---
 
-### Repeater (infrastructure)
+## Repeater (infrastructure)
 
 A repeater is an always-on node that helps extend coverage for yourself and others. Repeaters are critical to the health of the mesh, but they require more planning and coordination.
 
