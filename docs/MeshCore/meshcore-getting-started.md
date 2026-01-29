@@ -4,7 +4,7 @@ title: MeshCore Getting Started
 sidebar_label: MeshCore Getting Started
 ---
 
-# MeshCore: Getting Started  
+# MeshCore Getting Started  
 *Greater Boston Mesh*
 
 MeshCore is the software used by Greater Boston Mesh to build a decentralized, long-range wireless messaging network using LoRa radios. Nodes communicate directly with each other, forming a mesh that does not rely on the internet or cellular service.
