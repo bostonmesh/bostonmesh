@@ -1,6 +1,6 @@
 ---
 id: meshcore-mqtt
-title: Meshcore MQTT Server
+title: MeshCore MQTT Server
 sidebar_label: Meshcore MQTT
 ---
 # MeshCore MQTT Server
