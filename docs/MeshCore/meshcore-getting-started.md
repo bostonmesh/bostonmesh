@@ -52,7 +52,7 @@ Good fit if you:
 
 ---
 
-### Repeater (MeshCore infrastructure)
+### Repeater (infrastructure)
 
 A repeater is an always-on node that helps extend coverage for yourself and others. Repeaters are critical to the health of the mesh, but they require more planning and coordination.
 
@@ -65,7 +65,7 @@ If you want to host a repeater without getting involved in the community, please
 
 ---
 
-## Room Server (MeshCore)
+## Room Server
 
 A **Room Server** is a MeshCore node that hosts a **persistent group chat room** on the mesh.
 
