@@ -38,20 +38,6 @@ If you want examples of hardware that people in the community are already using 
 
 ---
 
-## Companion (fixed location)
-
-A fixed Companion runs in **one location**, often with **better placement** (window, high shelf) or an **external antenna** compared to a handheld.
-
-Just like a handheld or portable Companion, it’s still a **client node**: it’s mainly there to help **you** stay connected and reliably reach the **main mesh** from your location, not to act as an always-on public repeater.
-
-Good fit if you:
-
-- Want more reliable coverage from your location
-- Have a place to leave a node powered on (USB power / wall adapter)
-- Are experimenting before hosting a repeater
-
----
-
 ## Repeater (infrastructure)
 
 A repeater is an always-on node that helps extend coverage for yourself and others. Repeaters are critical to the health of the mesh, but they require more planning and coordination.
@@ -59,7 +45,6 @@ A repeater is an always-on node that helps extend coverage for yourself and othe
 Good fit if you:
 - Have stable power (UPS backup, solar with batteries, etc.)
 - Can place hardware reasonably high
-- Are willing to coordinate with the community
 
 If you want to host a repeater without getting involved in the community, please read [Host a Node](https://bostonme.sh/docs/host-a-node) for help, otherwise continue reading below.
 
