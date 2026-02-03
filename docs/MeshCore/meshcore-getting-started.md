@@ -161,7 +161,7 @@ For full firmware documentation and release notes, see: [MeshCore GitHub Reposit
 
 ### Use the USA/Canada preset
 
-Please use the **USA/Canada preset**.
+Please use the [USA/Canada preset](https://bostonme.sh/meshcore#contact).
 
 If you change the frequency, bandwidth, or spreading factor, your node will not be able to communicate with the Greater Boston Mesh.
 
