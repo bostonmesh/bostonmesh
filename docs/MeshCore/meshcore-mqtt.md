@@ -19,6 +19,7 @@ Use these broker settings:
 - **Broker:** `mqttmc01.bostonme.sh`  
 - **Port:** `443`
 - **TSL:** `true`
+- **Verify TLS Certificate:** `true`
 - **Transport:** WebSockets  
 - **Authentication:** Auth token enabled  - [Meshcore-decoder](https://github.com/michaelhart/meshcore-decoder)
 - **Token audience:** `mqttmc01.bostonme.sh`
