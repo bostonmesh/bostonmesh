@@ -1,7 +1,7 @@
 ---
 id: meshcore-resources
 title: MeshCore Resources
-sidebar_label: Resources
+sidebar_label: MeshCore Resources
 ---
 
 # MeshCore Resources
