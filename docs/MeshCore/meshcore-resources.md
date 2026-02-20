@@ -14,11 +14,17 @@ The official MeshCore project site is the best place to start for core docs, dow
 
 - MeshCore: https://meshcore.dev/
 
-## Flasher
+## Firmware
 
-Use the flasher to load MeshCore firmware onto supported hardware. This is typically the fastest path from “new board” to “on the air.”
+This is where you’ll find the **officialMeshCore firmware** and the easiest way to flash it onto supported hardware. It’s typically the fastest path from “new board” to “on the air.”
 
 - MeshCore Flasher: https://flasher.meshcore.dev/
+
+### Easy SkyMesh Custom Firmware
+
+In Boston, many of us are running IoTThinks’ custom MeshCore firmware (Easy SkyMesh), which helps improve power savings on repeaters.
+
+- IoTThinks Repo: https://github.com/IoTThinks/EasySkyMesh
 
 ## Live Map (Greater Boston Mesh)
 
