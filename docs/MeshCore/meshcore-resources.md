@@ -42,11 +42,23 @@ Our live map is the quickest way to see active nodes, recent activity, and overa
 
 Our [self-hosted coverage map](https://github.com/nullrouten0/meshcore-coverage-map) focuses on **RF coverage and reach**. Use this when you want a “where does this node actually get out?” view, or when planning new repeater locations.
 
+Want to contribute coverage data? See our wardriving guide:
+
+- Wardriving How-To: https://bostonme.sh/docs/MeshCore/meshcore-wardrive
 - Coverage Map: https://coveragemap.bostonme.sh/
+
+## Wardriving App (Android)
+
+This Android-only wardriving app records MeshCore reception data and stores it **locally on your phone first**. It’s a great way to test **node placement and RF coverage** (what your device can hear in different locations), not whether the entire network can hear your message.
+
+Uploading is **optional**, but we host a coverage site so users can upload their samples if they’d like. ([MeshCore Wardrive (Android)](https://github.com/mintylinux/Meshcore-Wardrive-Android))
+
+- Coverage Map: https://coveragemap2.bostonme.sh/
+- Upload URL: https://coveragemap2.bostonme.sh/api/samples
 
 ## MeshMapper
 
-[MeshMapper](https://wiki.meshmapper.net/) is another visualization and exploration tool that’s great for browsing node placement and coverage patterns, especially when you want a different lens than the live map.
+[MeshMapper](https://wiki.meshmapper.net/) is another visualization and exploration tool that’s great for browsing node placement and coverage patterns.
 
 - MeshMapper: https://bos.meshmapper.net/
 
