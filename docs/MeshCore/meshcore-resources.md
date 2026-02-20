@@ -26,6 +26,12 @@ In Boston, many of us are running IoTThinks’ custom MeshCore firmware (Easy Sk
 
 - IoTThinks Repo: https://github.com/IoTThinks/EasySkyMesh
 
+## LetsMesh Analyzer
+
+A real-time packet and reliability analysis tool for the MeshCore network. It helps repeater owners monitor health, spot abuse/bugs, and improve overall reliability using data collected from MQTT-connected observer nodes.
+
+- LetsMesh Analyzer: https://analyzer.letsmesh.net/packets?region=BOS
+
 ## Live Map (Greater Boston Mesh)
 
 Our live map is the quickest way to see active nodes, recent activity, and overall mesh health in near real time. Created by a local resident [Yellowcooln](https://github.com/yellowcooln).
