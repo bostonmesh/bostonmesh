@@ -33,14 +33,24 @@ If a repeater in your mesh network hears it, the bot can add a point to the map 
 
 To also log “misses” (places you *can’t* reach the mesh), use the Wardrive web app, which automates pings and reports both hits and misses.
 
-### MQTT observers (Greater Boston)
+### MQTT Observers (Greater Boston)
 
-Greater Boston currently uses **LetsMesh MQTT Observers**:
+Greater Boston currently uses the same MQTT Observers as [LetsMesh](https://analyzer.letsmesh.net/status/observers?region=BOS).
 
+- `C3PO`
+- `DeputyDawg - Observer`
+- `Dighton 1 - V4`
+- `Georgetown-MA-Room`
+- `MNK`
+- `PR-Room-Server`
+- `South Plymouth MQTT`
+- `WAL-SE Room Server`
+- `YC-Observer`
 - `https://letsme.sh/ - 01`
 - `https://letsme.sh/ - 02`
+- `tyqre-observer`
 
-For your coverage points to appear, your `#wardrive` messages must be observed (seen) by the network.
+For your coverage points to appear, your `#wardrive` messages must be observed (seen) by one of the above observers.
 
 ## The easiest way to contribute: the Wardrive web app
 
