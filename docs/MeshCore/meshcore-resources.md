@@ -8,11 +8,15 @@ sidebar_label: MeshCore Resources
 
 Here are the main links we reference most often across **Greater Boston Mesh** for MeshCore.
 
-## Main MeshCore site
+## MeshCore Resources
 
-The official MeshCore project site is the best place to start for core docs, downloads, and project updates.
+The official MeshCore site and documentation are the best places to start for core guides and project updates.
 
-- MeshCore: https://meshcore.dev/
+* **MeshCore:** https://meshcore.dev/
+* **GitHub Docs:** https://github.com/meshcore-dev/MeshCore/tree/main/docs
+* **Repeater & Room Server CLI Reference:** https://github.com/meshcore-dev/MeshCore/wiki/Repeater-&-Room-Server-CLI-Reference
+
+Start there for installation steps, configuration details, and CLI usage before exploring community tools or custom builds.
 
 ---
 
