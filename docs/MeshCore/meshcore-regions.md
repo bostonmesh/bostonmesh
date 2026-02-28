@@ -45,12 +45,12 @@ These settings can be changed remotely over the mesh after a repeater is deploye
 3. Log into the repeater as admin.
 4. Go to `Settings`.
 5. Select `Manage Regions`.
-   ![Manage Regions screen](./assets/region-1.png)
 6. Click the add button at the top right.
-   ![Add region button](./assets/region-2.png)
+   ![Manage Regions screen](./assets/region-1.png)
 7. Enter in `ma` and click the check mark at the top right.
-   ![Enter ma region](./assets/region-3.png)
+   ![Add region button](./assets/region-2.png)
 8. Click the 3 dots next to `ma` and select `Allow Flood`.
+   ![Enter ma region](./assets/region-3.png)
 9. Click the check box to confirm region settings.
    ![Confirm region settings](./assets/region-4.png)
 
