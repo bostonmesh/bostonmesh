@@ -35,16 +35,6 @@ When deploying a repeater, add `newengland` and `us` at the same time you add th
 
 If you are unsure which region to use, ask in Discord or Public mesh chat before finalizing deployment.
 
-## Rollout note for flood permissions
-
-Do not deny flood on `*` yet.
-
-We need all deployed repeaters on compatible versions before changing global flood behavior, and that upgrade process may take time as nodes are updated across different locations.
-
-We can start adding and organizing regions now, then apply stricter flood-permission behavior once the network is fully updated.
-
-These settings can be changed remotely over the mesh after a repeater is deployed.
-
 ## How scope forwarding works
 
 Each channel can have a scope. If a message is sent on a scoped channel, that packet carries the same scope.
@@ -60,6 +50,16 @@ Example:
 
 - If someone in Boston sends with `ma` scope to Providence, all repeaters on that route need `ma`.
 - If they send with `ri` scope, all repeaters on that route need `ri`.
+
+## Rollout note for flood permissions
+
+Do not deny flood on `*` yet.
+
+We need all deployed repeaters on compatible versions before changing global flood behavior, and that upgrade process may take time as nodes are updated across different locations.
+
+We can start adding and organizing regions now, then apply stricter flood-permission behavior once the network is fully updated.
+
+These settings can be changed remotely over the mesh after a repeater is deployed.
 
 ## How to set region in the UI
 
