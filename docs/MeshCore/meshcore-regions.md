@@ -58,29 +58,29 @@ These settings can be changed remotely over the mesh after a repeater is deploye
 
 Use this sequence on a repeater serial CLI to create/update `ma`, allow flood, and persist it.
 
-```bash
+```
 region put ma *
 ```
 Creates (or updates) the `ma` region under global scope.
 
-```bash
+```
 region allowf ma
 ```
 Enables flood permission for `ma`.
 
-```bash
+```
 region save
 ```
 Saves region definitions and permissions to storage.
 
 Optional verification:
 
-```bash
+```
 region get ma
 ```
 Checks the `ma` region entry.
 
-```bash
+```
 region list allowed
 ```
 Confirms `ma` appears in the allowed list.
