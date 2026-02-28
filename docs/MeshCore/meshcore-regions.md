@@ -29,8 +29,9 @@ Use these region names for Greater Boston Mesh deployments:
 Also add:
 
 - `newengland` (regional scope)
+- `us` (national scope)
 
-When deploying a repeater, add `newengland` at the same time you add the state region.
+When deploying a repeater, add `newengland` and `us` at the same time you add the state region.
 
 If you are unsure which region to use, ask in Discord or Public mesh chat before finalizing deployment.
 
@@ -69,16 +70,16 @@ Example:
 5. Select `Manage Regions`.
 6. Click the add button at the top right.
    ![Manage Regions screen](./assets/region-1.png)
-7. Enter in `ma` and click the check mark at the top right. Repeat this to also add `newengland`.
+7. Enter in `ma` and click the check mark at the top right. Repeat this to also add `newengland` and `us`.
    ![Add region button](./assets/region-2.png)
-8. Click the 3 dots next to `ma` and select `Allow Flood`. Do the same for `newengland`.
+8. Click the 3 dots next to `ma` and select `Allow Flood`. Do the same for `newengland` and `us`.
    ![Enter ma region](./assets/region-3.png)
 9. Click the check box to confirm region settings.
    ![Confirm region settings](./assets/region-4.png)
 
-## How to set ma and newengland as allowed regions (CLI)
+## How to set allowed regions (CLI)
 
-Use this sequence on a repeater serial CLI to create/update `ma` and `newengland`, allow flood for both, and persist it.
+Use this sequence on a repeater serial CLI to create/update and allow one region (`ma` shown here), then repeat the same steps for `us` and `newengland`.
 
 ```
 region put ma *
@@ -90,15 +91,7 @@ region allowf ma
 ```
 Enables flood permission for `ma`.
 
-```
-region put newengland *
-```
-Creates (or updates) the `newengland` region under global scope.
-
-```
-region allowf newengland
-```
-Enables flood permission for `newengland`.
+Repeat the same two commands for each additional region you want to allow (for example: `us`, `newengland`).
 
 ```
 region save
@@ -112,15 +105,12 @@ region get ma
 ```
 Checks the `ma` region entry.
 
-```
-region get newengland
-```
-Checks the `newengland` region entry.
+Repeat verification for each added region (for example: `region get us`, `region get newengland`).
 
 ```
 region list allowed
 ```
-Confirms `ma` and `newengland` appear in the allowed list.
+Confirms your added regions appear in the allowed list.
 
 For the full region command list, see the official MeshCore CLI reference:
 https://github.com/meshcore-dev/MeshCore/wiki/Repeater-&-Room-Server-CLI-Reference#region-management-repeater-only
