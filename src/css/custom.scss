@@ -284,6 +284,28 @@ section.light-bg {
   font-size: 0.9rem;
 }
 
+/* MeshCore channel list */
+.channel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 10px 0 15px;
+}
+
+.channel-pill {
+  background: #f0f5ff;
+  border: 1px solid #d0e0ff;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
 /* Center the table itself */
 .radio-settings-table {
   display: flex;

@@ -117,13 +117,18 @@ export default function Home() {
               <div class="contact-card">
                 <h3>Meshcore Channel</h3>
                 <p><strong>Meshcore Channel:</strong></p>
-                <div class="channel-hash">
-                  <code>Public</code>
+                <div class="channel-list">
+                  <code class="channel-pill">Public</code>
+                  <code class="channel-pill">#chat</code>
+                  <code class="channel-pill">#coffee</code>
+                  <code class="channel-pill">#emergency</code>
+                  <code class="channel-pill">#ice-alert</code>
+                  <code class="channel-pill">#jokes</code>
+                  <code class="channel-pill">#politics</code>
+                  <code class="channel-pill">#test</code>
+                  <code class="channel-pill">#weather</code>
                 </div>
-                <div class="channel-hash">
-                  <code>#test</code>
-                </div>
-                <p class="channel-note">Once you’re online, say hello in Public so we know you’re there! We also use #test for trying out nodes and testing paths.</p>
+                <p class="channel-note">Once you’re online, say hello in Public so we know you’re there! Use #test for trying out nodes and testing paths. Ask in Discord or Public mesh chat for other channels in use.</p>
                 <p><strong>Discord Server:</strong></p>
                 <div className="channel-hash">
                   <a
