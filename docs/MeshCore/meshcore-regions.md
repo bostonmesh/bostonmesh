@@ -54,7 +54,7 @@ These settings can be changed remotely over the mesh after a repeater is deploye
 9. Click the check box to confirm region settings.
    ![Confirm region settings](./assets/region-4.png)
 
-## How to set `ma` as an allowed region (CLI)
+## How to set ma as an allowed region (CLI)
 
 Use this sequence on a repeater serial CLI to create/update `ma`, allow flood, and persist it.
 
