@@ -148,6 +148,14 @@ For full firmware documentation and release notes, see: [MeshCore GitHub Reposit
 
 Please use the [USA/Canada preset](https://bostonme.sh/meshcore#contact).
 
+Recommended values:
+
+- Preset: `USA/Canada (Recommended)`
+- Frequency: `910.525 MHz`
+- Bandwidth: `62.5 kHz`
+- Spreading Factor: `7`
+- Coding Rate: `5`
+
 If you change the frequency, bandwidth, or spreading factor, your node will not be able to communicate with the Greater Boston Mesh.
 
 If your node cannot see or reach anyone, double-check that you are using the USA/Canada preset.
