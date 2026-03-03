@@ -31,7 +31,8 @@ Install the MeshMapper app for your platform:
 
 If you need help, create a support ticket:
 
-- [https://meshmapper.net/?createticket](https://meshmapper.net/?createticket)
+- Main website: [https://meshmapper.net/?createticket](https://meshmapper.net/?createticket)
+- GitHub issues: [https://github.com/MeshMapper/MeshMapper_Project/issues/new/choose](https://github.com/MeshMapper/MeshMapper_Project/issues/new/choose)
 
 Join the MeshMapper Discord community:
 
