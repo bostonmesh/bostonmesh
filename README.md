@@ -1,6 +1,8 @@
-# Greater Boston Mesh
+<h1 align="center">Greater Boston Mesh</h1>
 
-![Greater Boston Mesh Logo](./static/img/logo.png)
+<p align="center">
+  <img src="./static/img/logo.png" alt="Greater Boston Mesh Logo" width="50%" />
+</p>
 
 Greater Boston Mesh is a volunteer-led community building resilient, off-grid communications across the Greater Boston area.
 
