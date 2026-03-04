@@ -13,6 +13,14 @@ const config = {
   title: 'Boston Mesh',
   tagline: '',
   favicon: 'img/favicon.ico',
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'darkreader-lock',
+      },
+    },
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {

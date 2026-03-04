@@ -17,8 +17,8 @@ We support and document practical mesh networking workflows, including:
 ## Documentation
 
 - Docs home: https://bostonme.sh/docs/Introduction
-- MeshCore docs: https://bostonme.sh/docs/category/meshcore
-- Meshtastic docs: https://bostonme.sh/docs/category/meshtastic
+- MeshCore docs: https://bostonme.sh/docs/MeshCore
+- Meshtastic docs: https://bostonme.sh/docs/Meshtastic
 
 ## Contributing
 
