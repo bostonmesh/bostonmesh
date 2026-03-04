@@ -100,9 +100,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/social-card.jpg',
       colorMode: {
-        defaultMode:	'light',
-        respectPrefersColorScheme: false,
-        disableSwitch: true
+        defaultMode: 'light',
+        respectPrefersColorScheme: true,
+        disableSwitch: false
       },
       navbar: {
         title: 'Greater Boston Mesh',
