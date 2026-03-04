@@ -119,7 +119,7 @@ const config = {
           },
           {
             to: '/meshcore',
-            label: 'Meshcore',
+            label: 'MeshCore',
             position: 'left'
           },
           {

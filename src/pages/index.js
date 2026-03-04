@@ -15,7 +15,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           Off-Grid Communication <br></br> for the Greater Boston Area
         </Heading>
-        {/* <p className="hero__subtitle">Meshtastic, Meshcore, and more!</p> */}
+        {/* <p className="hero__subtitle">Meshtastic, MeshCore, and more!</p> */}
       </div>
     </header>
   );
@@ -33,7 +33,7 @@ export default function Home() {
           <div className="container">
             <h2>What is the Greater Boston Mesh?</h2>
             <div className="about-description">
-              <p>The Greater Boston Mesh is a volunteer-led, open community project focused on building a secure and reliable off-grid communication network throughout the greater Boston area, using affordable, low-power radio devices. The area has two parallel networks running on Meshcore and Meshtastic.</p>
+              <p>The Greater Boston Mesh is a volunteer-led, open community project focused on building a secure and reliable off-grid communication network throughout the greater Boston area, using affordable, low-power radio devices. The area has two parallel networks running on MeshCore and Meshtastic.</p>
             </div>
 
             <Link
