@@ -5,10 +5,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const FeatureList = [
   {
-    title: 'Meshcore',
+    title: 'MeshCore',
     url: '/meshcore',
     img: require('@site/static/img/meshcore.png').default,
-    altText: 'Meshcore logo',
+    altText: 'MeshCore logo',
     imgClassName: styles.meshcoreLogo,
     description: (
       <>

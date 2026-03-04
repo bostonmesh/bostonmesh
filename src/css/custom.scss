@@ -56,7 +56,18 @@
 }
 
 .hero .button {
-  margin-right: 2rem;
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .hero .hero__title {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  .hero .button {
+    margin-right: 0;
+  }
 }
 
 section {

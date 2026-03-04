@@ -25,12 +25,12 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Meshcore - ${siteConfig.title}`}
+      title={`MeshCore - ${siteConfig.title}`}
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <Heading as="h1" className="hero__title">
-            Meshcore
+            MeshCore
           </Heading>
           <div className={styles.buttons}>
             <Link
@@ -49,9 +49,9 @@ export default function Home() {
       <main className="meshcore">
         <section id="repeaters" className="repeaters light-bg">
           <div className="container">
-            <h2>What is Meshcore?</h2>
+            <h2>What is MeshCore?</h2>
             <div className="about-description">
-              <p>Meshcore is a multi-platform system for enabling secure text-based communications utilizing LoRa radio hardware. It can be used for Off-Grid Communication, Emergency Response & Disaster Recovery, Outdoor Activities, Tactical Security including law enforcement, private security and also IoT sensor networks.</p>
+              <p>MeshCore is a multi-platform system for enabling secure text-based communications utilizing LoRa radio hardware. It can be used for Off-Grid Communication, Emergency Response & Disaster Recovery, Outdoor Activities, Tactical Security including law enforcement, private security and also IoT sensor networks.</p>
               <p><a href="https://meshcore.co.uk/" target="_blank" rel="noopener">Learn more about MeshCore →</a></p>
             </div>
           </div>
@@ -76,9 +76,9 @@ export default function Home() {
           <div className="container">
             <h2>Join the Network</h2>
             <div className="contact-grid">
-              {/* Meshcore */}
+              {/* MeshCore */}
               <div className="contact-card">
-                <h3>Meshcore Radio Settings</h3>
+                <h3>MeshCore Radio Settings</h3>
                 <div className="radio-settings-table">
                 <table className="radio-table">
                   <tbody>
@@ -115,8 +115,8 @@ export default function Home() {
                 </div>
               </div>
               <div class="contact-card">
-                <h3>Meshcore Channel</h3>
-                <p><strong>Meshcore Channel:</strong></p>
+                <h3>MeshCore Channel</h3>
+                <p><strong>MeshCore Channel:</strong></p>
                 <div class="channel-list">
                   <code class="channel-pill">Public</code>
                   <code class="channel-pill">#chat</code>

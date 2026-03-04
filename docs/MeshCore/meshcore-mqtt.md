@@ -5,15 +5,17 @@ sidebar_label: Meshcore MQTT
 ---
 # MeshCore MQTT Server
 
-Greater Boston Mesh runs its own MQTT server to populate our **[MeshMapper Coverage Map](https://bos.meshmapper.net/)** and **[Live Packet Map](https://live.bostonme.sh/)**.
+Greater Boston Mesh runs its own MQTT server to power our **[Live Packet Map](https://live.bostonme.sh/)** and local packet visibility tools.
 
-The coverage map requires coverage verification via MQTT, so if you are not connected to the Greater Boston Mesh, you’ll need to connect your node to the MQTT server.
+To upload to the Greater Boston Mesh MQTT server, you can use the same LetsMesh onboarding flow and choose to add another/custom broker when prompted in the install script:
 
-There are three supported push-agent options. Pick the one that matches how you connect to your node:
+- LetsMesh Add Observer: https://analyzer.letsmesh.net/observer/onboard
 
-- [MeshCore-to-MQTT (repeater/roomserver style):](https://github.com/Cisien/meshcoretomqtt)
-- [MeshCore Packet Capture (companion):](https://github.com/agessaman/meshcore-packet-capture)
-- [MeshCore HA Add-on (Home Assistant):](https://meshcore-dev.github.io/meshcore-ha/docs/ha/mqtt)
+Or use the direct GitHub tools below.
+
+- [MeshCore-to-MQTT (Repeater/Room Server):](https://github.com/Cisien/meshcoretomqtt)
+- [MeshCore Packet Capture (Companion):](https://github.com/agessaman/meshcore-packet-capture)
+- [MeshCore HA Add-on (Companion via Home Assistant):](https://meshcore-dev.github.io/meshcore-ha/docs/ha/mqtt)
 
 Use these broker settings:
 
@@ -28,21 +30,3 @@ Use these broker settings:
 You can confirm whether your node is showing up on our MQTT infrastructure here:
 
 - **MQTT Dashboard:** https://mcmqttdashboard.bostonme.sh/
-
----
-
-# LetsMesh MeshCore Packet Analyzer
-
-You can also upload your packets to the **[LetsMesh MeshCore Packet Analyzer](https://analyzer.letsmesh.net/)**.
-
-Greater Boston Mesh's MQTT server **does not** automatically upload your traffic to LetsMesh.
-
-If you want packets to appear on LetsMesh, you must add LetsMesh as an additional broker/output in your push-agent configuration, alongside the Greater Boston Mesh broker settings above.
-
-When configuring LetsMesh, set the **IATA code to `BOS`**.
-
-This site shows **live packets by region**, so to view Greater Boston Mesh traffic you’ll want to select the **`BOS`** region. It’s a super handy “sanity check” for range, because it helps answer the big question:
-
-**Did my message get heard by the greater mesh… or only by my local node/nearby neighbors?**
-
-If you see your packets appearing in the feed, that’s strong proof your transmissions are making it out into the wider MeshCore ecosystem, not just echoing around locally.
