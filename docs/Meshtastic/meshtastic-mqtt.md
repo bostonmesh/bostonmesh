@@ -6,129 +6,97 @@ sidebar_label: Meshtastic MQTT
 
 # Meshtastic MQTT Server
 
-The Meshtastic side of the Boston Mesh network uses a shared MQTT broker to sync telemetry and messages between local radios and the public Meshtastic map services.
+Greater Boston Mesh runs a Meshtastic MQTT broker for map/telemetry uplink.
 
-Our Meshtastic MQTT broker is:
+Use this broker:
 
 - **Hostname:** `mqttmt01.bostonme.sh`
-- **Protocol:** MQTT (unencrypted on port 1883)
+- **Port:** `1883`
+- **Protocol:** MQTT (`tcp://`, no TLS on this listener)
 - **Authentication:** Username/password required
-- **Bridged to maps:**  
-  - [Liam Cottle’s Meshtastic Map](https://meshtastic.liamcottle.net/)  
+- **Uplink targets:**  
+  - [Meshtastic Map](https://meshtastic.liamcottle.net/)  
   - [MeshMap.net](https://meshmap.net/)
 
-You only need to configure your radio to talk to **`mqttmt01.bostonme.sh`**. The broker will automatically uplink your position and telemetry to both maps.
+Configure your node to talk to **`mqttmt01.bostonme.sh`** and the broker handles uplink to those map backends.
 
 :::info
-All *radio-level* security (encryption, channels, etc.) is still handled by Meshtastic. The MQTT broker simply carries already-encrypted Meshtastic packets between devices and the mapping backends.
+Radio-level security (channels/encryption) is still handled by Meshtastic.
 :::
 
 ---
 
-## MQTT Broker Behavior
+## Broker Behavior
 
 The broker at `mqttmt01.bostonme.sh` is configured to:
 
 - Accept connections from Meshtastic nodes with valid credentials.
 - Uplink packets under the **`msh/US/MA`** root topic to:
-  - `mqtt.meshtastic.liamcottle.net` (for Liam Cottle’s map)
-  - `mqtt.meshmap.net` / `mqtt.meshtastic.org`-style backends (for MeshMap.net and related services)
-- **Not** provide downlink commands from the internet back into the mesh (uplink-only from our broker’s perspective).
+  - [Meshtastic Map](https://meshtastic.liamcottle.net/)
+  - [MeshMap.net](https://meshmap.net/)
+- Not provide MQTT-to-RF downlink into the local mesh.
 
-This keeps the mesh focused on **local RF traffic**, while still allowing **public visualization** of node positions and telemetry.
+This keeps traffic local on RF while still providing public visualization.
 
 ---
 
-## Recommended Meshtastic Settings
+## Recommended Node Settings
 
-On your Meshtastic device (via the app, web UI, or CLI), configure the following options.
+On your Meshtastic node (app/web/CLI), use the following values.
 
-### MQTT Settings
+### MQTT
 
 Under **MQTT**:
 
 - **MQTT > Enabled:** `ON`  
-  Enables MQTT support so your node can connect to the broker.
-
 - **MQTT > Encryption Enabled:** `ON`  
-  Keeps your MQTT messages encrypted at the Meshtastic protocol level.  
-  *(This is independent of TLS on the broker port.)*
-
+  This is Meshtastic packet encryption (separate from TLS transport).
 - **MQTT > Map Report:** `OFF`  
-  We handle map uplinks at the broker level. You do **not** need to send map reports directly from the node.
-
+  Uplink is handled by the broker.
 - **MQTT > Root Topic:** `msh/US/MA`  
-  This ensures your node publishes into the **Massachusetts** topic tree that our broker expects.
-
+  Required for Massachusetts uplink routing.
 - **MQTT > Address:** `mqttmt01.bostonme.sh`  
-  This is the hostname of the Boston Mesh Meshtastic MQTT broker.
-
 - **MQTT > Username:** `meshdev`  
 - **MQTT > Password:** `large4cats`  
-
-  These are the required credentials for this broker.  
-  If your node doesn’t support username/password, it **will not** be able to connect.
-
 - **MQTT > TLS Enabled:** `OFF`  
-  Our Meshtastic MQTT listener currently runs on plain MQTT (`tcp://`) with encryption handled by Meshtastic itself.  
-  Make sure this is off unless explicitly told otherwise in future docs.
+  This listener is plain MQTT on `1883`.
 
 ---
 
-### Channel Settings
+### Channel (Primary)
 
 Under **Channels** → **Primary Channel**:
 
-- **Positions Enabled:** `ON`  
-  Allows your node to send GPS/location updates over the channel.
-
-- **Approximate Location:** *(set as desired)*  
-  Use this to blur your exact location if you want more privacy.  
-  - Smaller radius = more accurate position on the map.  
-  - Larger radius = more privacy, but less precise pin on the map.
-
+- **Positions Enabled:** `ON`
+- **Approximate Location:** set to your preferred privacy level
 - **MQTT Uplink:** `ON`  
-  This allows position and telemetry from this channel to be sent **up** to the MQTT broker (and then to the maps).
-
 - **MQTT Downlink:** `OFF`  
-  We currently do not use downlink from MQTT → RF.  
-  Keeping this off reduces unnecessary traffic and potential noise on the mesh.
+  Keep off to avoid internet-to-RF traffic injection.
 
 ---
 
-### Module Settings
+### Modules
 
 Under **Settings** → **Modules**:
 
 - **Neighbor Info:** `ON`  
 
-This enables the Neighbor Info module, which provides information about nearby nodes and helps make the mesh health and topology visible to monitoring tools and maps.
-
 ---
 
-### LoRa Settings
+### LoRa
 
 Under **LoRa**:
 
-- **Ok to MQTT:** `ON`  
-
-This setting confirms that it’s acceptable for RF traffic to be mirrored to MQTT.  
-With this turned on, your node will contribute to the shared view of the mesh on the mapping services.
+- **Ok to MQTT:** `ON`
 
 ---
 
-## What This Setup Does for You
+## Result
 
-With the settings above:
-
-- Your node connects to `mqttmt01.bostonme.sh` using **MQTT + credentials**.
-- The broker forwards (uplinks) your Meshtastic packets to:
-  - [https://meshtastic.liamcottle.net/](https://meshtastic.liamcottle.net/)
-  - [https://meshmap.net/](https://meshmap.net/)
-- Your device’s position and telemetry appear on those maps under the **Massachusetts** region/topic.
-- RF traffic stays local on LoRa, but is mirrored to the internet for visualization and analysis.
-
-You don’t need to configure any external MQTT addresses on your node—just the **Boston Mesh MQTT broker** details listed here.
+With these settings:
+- Your node publishes to `mqttmt01.bostonme.sh`
+- Packets are uplinked to Meshtastic map services
+- RF traffic remains local while map visibility is preserved
 
 ---
 
@@ -136,20 +104,12 @@ You don’t need to configure any external MQTT addresses on your node—just th
 
 If your node is not appearing on the map:
 
-1. **Verify MQTT Status on the Node**
-   - Check that:
-     - MQTT is **Enabled**
-     - Address is **`mqttmt01.bostonme.sh`**
-     - Root Topic is **`msh/US/MA`**
-     - Username/password are set correctly.
-
-2. **Check Approximate Location**
-   - If your approximate radius is very large, your pin may look very “blurred” or generalized.
-
-3. **Confirm Channel Matching**
-   - Ensure your node is using the correct **Primary Channel** matching the rest of the Boston Mesh Meshtastic setup.
-
-4. **Try a Reboot**
-   - Power-cycle the node or restart from the UI after changing MQTT settings.
+1. Verify MQTT is enabled with:
+   - Address: `mqttmt01.bostonme.sh`
+   - Root topic: `msh/US/MA`
+   - Username/password set
+2. Confirm `MQTT Uplink` is ON and `MQTT Downlink` is OFF on the primary channel.
+3. Check approximate-location settings if map position looks too blurred.
+4. Reboot the node after changing MQTT settings.
 
 If the problem persists, reach out to the Boston Mesh maintainers with your node’s **ID** and **approximate location** so we can check the MQTT broker logs and map uplink status.
