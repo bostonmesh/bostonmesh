@@ -6,7 +6,7 @@ sidebar_label: Meshtastic MQTT
 
 # Meshtastic MQTT Server
 
-Greater Boston Mesh runs a Meshtastic MQTT broker for map/telemetry uplink.
+Greater Boston Mesh runs a Meshtastic MQTT broker for map/telemetry uplink, and it feeds our **[Meshtastic Malla Map](https://malla.bostonme.sh/map)**.
 
 Use this broker:
 
@@ -15,6 +15,7 @@ Use this broker:
 - **Protocol:** MQTT (`tcp://`, no TLS on this listener)
 - **Authentication:** Username/password required
 - **Uplink targets:**  
+  - [Meshtastic Malla Map](https://malla.bostonme.sh/map)
   - [Meshtastic Map](https://meshtastic.liamcottle.net/)  
   - [MeshMap.net](https://meshmap.net/)
 
@@ -32,6 +33,7 @@ The broker at `mqttmt01.bostonme.sh` is configured to:
 
 - Accept connections from Meshtastic nodes with valid credentials.
 - Uplink packets under the **`msh/US/MA`** root topic to:
+  - [Meshtastic Malla Map](https://malla.bostonme.sh/map)
   - [Meshtastic Map](https://meshtastic.liamcottle.net/)
   - [MeshMap.net](https://meshmap.net/)
 - Not provide MQTT-to-RF downlink into the local mesh.
