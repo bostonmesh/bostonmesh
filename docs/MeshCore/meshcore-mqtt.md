@@ -5,7 +5,7 @@ sidebar_label: Meshcore MQTT
 ---
 # MeshCore MQTT Server
 
-Greater Boston Mesh runs its own MQTT server to power our **[Live Packet Map](https://live.bostonme.sh/)** and local packet visibility tools.
+Greater Boston Mesh runs its own MQTT server, and it feeds our **[Live Packet Map](https://live.bostonme.sh/)** plus local packet visibility tools.
 
 To upload to the Greater Boston Mesh MQTT server, you can use the same LetsMesh onboarding flow and choose to add another/custom broker when prompted in the install script:
 
