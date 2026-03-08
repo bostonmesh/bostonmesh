@@ -227,10 +227,13 @@ You can send messages in the main Public channel, but there are additional publi
 
 If you want to send test messages without adding noise to the main Public channel, add and use the `#test` channel instead.
 
-There are often bots running in `#test` that will auto-respond if you send:
+Send:
 
-- `ackbot`
 - `test`
+
+For more bot/channel details, see:
+
+- https://bostonme.sh/docs/MeshCore/meshcore-bots
 
 If you receive a response, that confirms your node is successfully transmitting and receiving at least one hop into the mesh.
 
