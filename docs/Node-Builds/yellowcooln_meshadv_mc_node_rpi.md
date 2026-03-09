@@ -1,6 +1,8 @@
 # MeshCore Raspberry Pi 1W Repeater
 
-This document outlines the bill of materials (BOM) and setup for a MeshCore repeater using a Raspberry Pi and a MeshADV board or similar SX1262 radio. **Tested with MeshADV and PiMesh-1W**
+This document outlines the bill of materials (BOM) and setup for a MeshCore repeater using a Raspberry Pi and a MeshADV board or similar SX1262 radio. **Tested with MeshADV and PiMesh-1W v1**
+
+For setup instructions for the **PiMesh-1W v2**, follow the guide provided on [MeshSmith’s site](https://meshsmith.net/products/pimesh-1w).
 
 ---
 
@@ -89,7 +91,7 @@ Add the following to the bottom of the file:
 ```
 # Enable SPI
 dtparam=spi=on
-dtoverlay=spi0-0cs
+dtoverlay=spi0-0cs # Do NOT include this for PiMesh-1W v2!
 
 # Enable I2C
 dtparam=i2c_arm=on
@@ -110,59 +112,18 @@ Clone the [pyMC_Repeater](https://github.com/rightup/pyMC_Repeater) repository:
 
 ```
 git clone https://github.com/rightup/pyMC_Repeater.git
-cd pyMC_Repeater
 ```
 
 Install the repeater software:
 
 ```
-sudo bash manage.sh
+cd pyMC_Repeater && sudo bash manage.sh install
 ```
+- The installer will install all required packages and dependencies for pyMC.
 
-- In the script menu, select **Install**.
-- After installation, it will ask you to configure the radio settings.
-
-```
-=== pyMC Repeater Radio Configuration ===
-
-=== Step 0: Set Repeater Name ===
-
-Enter repeater name [mesh-repeater-01] (press Enter to keep):
-```
-
-Enter the name you prefer and press Enter.
-
-```
-=== Step 1: Select Hardware ===
-
-  1) Waveshare LoRa HAT (waveshare)
-  2) uConsole LoRa Module (uconsole)
-  3) PiMesh-1W (USA) (pimesh-1w-usa)
-  4) PiMesh-1W (UK) (pimesh-1w-uk)
-  5) MeshAdv Mini (meshadv-mini)
-  6) MeshAdv (meshadv)
-
-Select hardware (1-6):
-
-```
-
-Select **Option 6** or **Option 3** depending on which board you have.
-
-```
-=== Step 2: Select Radio Settings ===
-
-Fetching radio settings from API...
-Available Radio Settings:
-```
-
-Select **13**:  
-`13) USA/Canada (Recommended)            ----> 910.525MHz / SF7 / BW62.5 / CR5`
-
-- Let the install finish.
-
-After the install is finished, open a new browser tab and go to:  
+After the installation finishes, the script will prompt you to open a web browser and continue setup at:
 `http://<your-pis-ip-address>:8000`  
-You should now see the pyMC Repeater web interface!
+
 
 ![pyMC Dashboard](assets/meshadv_node_rpi/meshadv-pymc-dashboard.png)
 
@@ -178,13 +139,12 @@ Using nano, edit the file located at:
 sudo nano /etc/pymc_repeater/config.yaml
 ```
 
-Inside this file, you can configure:
+After making changes, restart the service. This can be done using the `manage.sh` script:
+```
+sudo bash manage.sh restart
+```
 
-- Location  
-- Public and private key (useful when replacing an existing node)  
-- Advert timing interval  
-
-After making changes, restart the service. This can be done using the `manage.sh` script or via systemctl:
+Or via systemctl:
 
 ```
 sudo systemctl restart pymc-repeater.service
