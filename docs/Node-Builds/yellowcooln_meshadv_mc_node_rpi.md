@@ -124,8 +124,11 @@ cd pyMC_Repeater && sudo bash manage.sh install
 After the installation finishes, the script will prompt you to open a web browser and continue setup at:
 `http://<your-pis-ip-address>:8000`  
 
+---
 
-![pyMC Dashboard](assets/meshadv_node_rpi/meshadv-pymc-dashboard.png)
+After completing setup, your dashboard should look similar to the example below.
+
+![pyMC Dashboard](assets/meshadv_node_rpi/meshadv-pymc-dashboard1.png)
 
 ---
 
