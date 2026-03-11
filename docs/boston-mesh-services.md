@@ -15,6 +15,12 @@ Made by local resident [Yellowcooln](https://github.com/yellowcooln).
 
 - https://live.bostonme.sh/
 
+## MeshCore Health Check
+
+MeshCore observer coverage app that generates test codes, watches MQTT observer receipts, and scores real- world message reachability with per-observer path details. 
+
+- https://healthcheck.bostonme.sh/
+
 ## Meshtastic Malla Map
 
 Malla is a web analyzer for Meshtastic networks based on MQTT data.
