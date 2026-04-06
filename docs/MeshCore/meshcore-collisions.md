@@ -6,7 +6,7 @@ sidebar_label: MeshCore Collisions
 
 # MeshCore Repeater Collisions
 
-MeshCore effectively uses the **first 2 hex characters of your public key** as a short “node ID” prefix.  
+MeshCore effectively uses the **first 2 hex characters of your public key** as a short “node ID” prefix.
 If two nodes in the same mesh share that prefix (example: `a3`), tools that rely on the short ID can get confused.
 
 This guide shows how to change your keypair so your repeater gets a **different 2-digit prefix**, using a **serial (USB) connection** and the MeshCore CLI command:
@@ -24,25 +24,23 @@ set prv.key <PRIVATE_KEY_HERE>
 
 ## What you’ll need
 
-* A PC connected to the repeater via **USB serial**
-* The **MeshCore web console**
-
-  * [https://flasher.meshcore.co.uk/](https://flasher.meshcore.co.uk/)
-* A new keypair with a **non-colliding prefix**, generated either:
-
-  * **In our Discord** using the bot command (it can generate a fresh keypair for you), or
-  * Via the web keygen: [https://gessaman.com/mc-keygen/](https://gessaman.com/mc-keygen/)
-
+- A PC connected to the repeater via **USB serial**
+- The **MeshCore web console**
+  - [https://flasher.meshcore.io/](https://flasher.meshcore.io/)
+- A new keypair with a **non-colliding prefix**, generated either:
+  - **In our Discord** using the bot command (it can generate a fresh keypair for you), or
+  - Via the web keygen: [https://gessaman.com/mc-keygen/](https://gessaman.com/mc-keygen/)
 
 ## Step 1: Check what prefixes are already in use nearby
 
 You can check prefixes a couple different ways:
 
 ### Option A: MeshCore Analyzer
-Browse the repeater list for the region `BOS - Boston, US` and look at the prefixes already in use:  
-https://analyzer.letsmesh.net/nodes/repeaters
+
+Browse the repeater list for the region `BOS - Boston, US` and look at the prefixes already in use: [LetsMesh Analyzer](https://analyzer.letsmesh.net/nodes/repeaters)
 
 ### Option B: Discord bot
+
 In the Discord server, run the command `/open` in `#meshcore-bot` channel, and check the prefixes shown there.
 
 > Goal: pick a prefix that isn’t already common around your local mesh.
@@ -57,7 +55,7 @@ You can generate a keypair either with our Discord bot **MeshBuddy** or via the 
 
 In Discord, go to the `#meshcore-bot` channel and run:
 
-* `/keygen XX`
+- `/keygen XX`
 
 Where `XX` is the first **two hex characters** of the prefix you want.
 
@@ -78,8 +76,7 @@ MeshCore expects the private key as **128 hex characters** (one continuous strin
 
 ## Step 3: Set the new private key over serial
 
-Go to:
-https://flasher.meshcore.co.uk/
+Go to the MeshCore flasher: [https://flasher.meshcore.io/](https://flasher.meshcore.io/)
 
 1. Click on `Console`
 2. Select the device in the popup window.
@@ -91,9 +88,9 @@ set prv.key <PRIVATE_KEY_HERE>
 
 ### Paste safety checklist
 
-* The key is **exactly 128 hex characters**
-* No spaces, no line breaks, no quotes
-* Make sure you didn’t accidentally copy extra characters before/after the key
+- The key is **exactly 128 hex characters**
+- No spaces, no line breaks, no quotes
+- Make sure you didn’t accidentally copy extra characters before/after the key
 
 ---
 
@@ -121,9 +118,9 @@ Changing the private key changes the node’s identity.
 
 After re-keying, you may need to update:
 
-* ACLs / allowlists that reference the old pubkey
-* Dashboards, automations, or monitoring that key off the old identity
-* Anything else that “remembers” your node by pubkey
+- ACLs / allowlists that reference the old pubkey
+- Dashboards, automations, or monitoring that key off the old identity
+- Anything else that “remembers” your node by pubkey
 
 ---
 
