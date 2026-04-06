@@ -72,7 +72,7 @@ As of April 2026, please note that these are **not** region-locked chats.
 | --- | --- |
 | `#chat` | General day-to-day conversation. |
 | `#coffee` | Local meetup and casual social coordination.|
-| `#ice-alert` | ICE (Immigration and Customs Enforcement) activity alerts and related safety updates. <br /> **NOTE**: If you think ICE is in your area, please [contact Mass LUCE 617-370-5023](tel:\+16173705023) |
+| `#ice-alert` | ICE (Immigration and Customs Enforcement) activity alerts and related safety updates. <br /> **NOTE**: If you think ICE is in your area, please [contact Mass LUCE 617-370-5023](tel:+16173705023) |
 | `#jokes` | Humor and light social traffic. |
 | `#politics` | Politics-focused discussion. |
 | `#test` | Node testing, path testing, and signal/routing checks. |
@@ -82,4 +82,4 @@ As of April 2026, please note that these are **not** region-locked chats.
 
 * Channel usage can evolve over time as community needs change.
 * For current channel practices, check in `Public` or Discord.
-* Bot/channel command reference: <https://bostonme.sh/docs/MeshCore/meshcore-bots>
+* Bot/channel command reference: [MeshCore Bot Documentation](https://bostonme.sh/docs/MeshCore/meshcore-bots)

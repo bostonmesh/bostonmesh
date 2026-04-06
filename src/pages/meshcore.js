@@ -80,47 +80,48 @@ export default function Home() {
               <div className="contact-card">
                 <h3>MeshCore Radio Settings</h3>
                 <div className="radio-settings-table">
-                <table className="radio-table">
-                  <tbody>
-                    <tr>
-                      <td><strong>Preset:</strong></td>
-                      <td>USA/Canada (Recommended)</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Frequency:</strong></td>
-                      <td>910.525 MHz</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Bandwidth:</strong></td>
-                      <td>62.5 kHz</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Spreading Factor:</strong></td>
-                      <td>7</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Coding Rate:</strong></td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Advert (Zero Hop):</strong></td>
-                      <td>12 hours</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Advert (Flood):</strong></td>
-                      <td>48 hours</td>
-                    </tr>
-                  </tbody>
-                </table>
+                  <table className="radio-table">
+                    <tbody>
+                      <tr>
+                        <td><strong>Preset:</strong></td>
+                        <td>USA/Canada (Recommended)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Frequency:</strong></td>
+                        <td>910.525 MHz</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Bandwidth:</strong></td>
+                        <td>62.5 kHz</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Spreading Factor:</strong></td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Coding Rate:</strong></td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Advert (Zero Hop):</strong></td>
+                        <td>12 hours</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Advert (Flood):</strong></td>
+                        <td>48 hours</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
               <div class="contact-card">
                 <h3>MeshCore Channel</h3>
                 <p><strong>MeshCore Channel:</strong></p>
                 <div class="channel-list">
-                  <code class="channel-pill">Public</code>
+                  <code class="channel-pill">#ma-mesh</code>
                   <code class="channel-pill">#chat</code>
                   <code class="channel-pill">#coffee</code>
+                  <code class="channel-pill">Public</code>
                   <code class="channel-pill">#emergency</code>
                   <code class="channel-pill">#ice-alert</code>
                   <code class="channel-pill">#jokes</code>
@@ -128,7 +129,7 @@ export default function Home() {
                   <code class="channel-pill">#test</code>
                   <code class="channel-pill">#weather</code>
                 </div>
-                <p class="channel-note">Once you’re online, say hello in Public so we know you’re there! Use #test for trying out nodes and testing paths. Ask in Discord or Public mesh chat for other channels in use.</p>
+                <p class="channel-note">Once you’re online, say hello in `#ma-mesh` so we know you’re there! Use `#test` for trying out nodes and testing paths. Ask in Discord or `Public` mesh chat for other channels in use.</p>
                 <p><strong>Discord Server:</strong></p>
                 <div className="channel-hash">
                   <a
