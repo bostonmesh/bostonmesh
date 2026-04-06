@@ -62,8 +62,6 @@ We understand that hashtag channels still will use flood packets, but as we take
 
 We need to share the mesh resources with surrounding neighbors, out of respect for all. Thus, we should do our best to adhere to the community standards our neighbors are proposing. We do not own the mesh; _it is morphing into something beyond just ourselves_.
 
-These are the common channels used in Greater Boston Mesh for MeshCore.
-
 ## Other Good Channels
 
 As of April 2026, please note that these are **not** region-locked chats.
