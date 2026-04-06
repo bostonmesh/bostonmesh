@@ -240,6 +240,8 @@ Send:
 
 For more bot/channel details, see the [MeshCore bots documentation](https://bostonme.sh/docs/MeshCore/meshcore-bots)
 
+After your initial setup, see the [MeshCore channels documentation](https://bostonme.sh/docs/MeshCore/meshcore-channels) for current regional channel conventions.
+
 If you receive a response, that confirms your node is successfully transmitting and receiving at least one hop into the mesh.
 
 ---

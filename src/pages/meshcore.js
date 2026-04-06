@@ -114,22 +114,23 @@ export default function Home() {
                   </table>
                 </div>
               </div>
-              <div class="contact-card">
+              <div className="contact-card">
                 <h3>MeshCore Channel</h3>
                 <p><strong>MeshCore Channel:</strong></p>
-                <div class="channel-list">
-                  <code class="channel-pill">#ma-mesh</code>
-                  <code class="channel-pill">#chat</code>
-                  <code class="channel-pill">#coffee</code>
-                  <code class="channel-pill">Public</code>
-                  <code class="channel-pill">#emergency</code>
-                  <code class="channel-pill">#ice-alert</code>
-                  <code class="channel-pill">#jokes</code>
-                  <code class="channel-pill">#politics</code>
-                  <code class="channel-pill">#test</code>
-                  <code class="channel-pill">#weather</code>
+                <div className="channel-list">
+                  <code className="channel-pill">Public</code>
+                  <code className="channel-pill">#ma-mesh</code>
+                  <code className="channel-pill">#ma-hc</code>
+                  <code className="channel-pill">#chat</code>
+                  <code className="channel-pill">#coffee</code>
+                  <code className="channel-pill">#emergency</code>
+                  <code className="channel-pill">#ice-alert</code>
+                  <code className="channel-pill">#jokes</code>
+                  <code className="channel-pill">#politics</code>
+                  <code className="channel-pill">#test</code>
+                  <code className="channel-pill">#weather</code>
                 </div>
-                <p class="channel-note">Once you’re online, say hello in `#ma-mesh` so we know you’re there! Use `#test` for trying out nodes and testing paths. Ask in Discord or `Public` mesh chat for other channels in use.</p>
+                <p className="channel-note">New users can start in Public. Once your client is configured, use #ma-mesh for regional chat and #test for node/path testing. See the <a href="https://bostonme.sh/docs/MeshCore/meshcore-channels" target="_blank" rel="noopener noreferrer">MeshCore Channels</a> doc for current channel conventions.</p>
                 <p><strong>Discord Server:</strong></p>
                 <div className="channel-hash">
                   <a

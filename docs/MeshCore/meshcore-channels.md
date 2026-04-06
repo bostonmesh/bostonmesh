@@ -10,7 +10,7 @@ sidebar_label: MeshCore Channels
 
 _Note: This was adapted from an announcement on Discord in early April_
 
-The [New Hampshire Mesh made an announcement]() about organizing their region in order to be good mesh stewards and to prioritize good mesh hygiene. This push proposes the segmenting of certain channels or channel types by region. Instead of a blast to `Public` - which could have packets flood much farther than intended - a mesh user can target/tune their communication to something more local.
+The [New Hampshire Mesh made an announcement](https://discord.com/channels/1323830453383331880/1456263597100498974/1490524392898171072) about organizing their region in order to be good mesh stewards and to prioritize good mesh hygiene. This push proposes the segmenting of certain channels or channel types by region. Instead of a blast to `Public` - which could have packets flood much farther than intended - a mesh user can target/tune their communication to something more local.
 
 With New Hampshire implementing this practice and other nearby regions on board to do so, we should be good neighbors on the mesh and follow suit out of respect for everyone else.
 
@@ -24,7 +24,9 @@ Every unnecessary flood steals airtime from everyone. LoRa is a shared half-dupl
 
 ### What We're Asking: Use Hashtag Channels
 
-Until the MeshCore regional segmentation in firmware is stable enough for us to rely on, and enough repeaters are up-to-date with any new firmware changes, please us the appropriate hashtag channel(s) for your activity:
+Until the MeshCore regional segmentation in firmware is stable enough for us to rely on, and enough repeaters are up-to-date with any new firmware changes, please use the appropriate hashtag channel(s) for your activity:
+
+If you are brand new and have not added additional channels yet, starting in `Public` is fine. Move to regional hashtag channels once your client is configured.
 
 | Channel | Description | Status |
 | --- | --- | --- |
