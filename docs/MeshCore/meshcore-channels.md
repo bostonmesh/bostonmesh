@@ -10,7 +10,7 @@ sidebar_label: MeshCore Channels
 
 _Note: This was adapted from an announcement on Discord in early April_
 
-The [New Hampshire Mesh made an announcement](https://discord.com/channels/1323830453383331880/1456263597100498974/1490524392898171072) about organizing their region in order to be good mesh stewards and to prioritize good mesh hygiene. This push proposes the segmenting of certain channels or channel types by region. Instead of a blast to `Public` - which could have packets flood much farther than intended - a mesh user can target/tune their communication to something more local.
+The [New Hampshire Mesh made an announcement](https://discord.com/channels/1323830453383331880/1456263597100498974/1490524392898171072) about organizing their region in order to be good mesh stewards and to prioritize good mesh hygiene. You will need to join the NHMesh Discord first to view that message; the invite is listed in [Related Communities](https://bostonme.sh/docs/community-spaces). This push proposes the segmenting of certain channels or channel types by region. Instead of a blast to `Public` - which could have packets flood much farther than intended - a mesh user can target/tune their communication to something more local.
 
 With New Hampshire implementing this practice and other nearby regions on board to do so, we should be good neighbors on the mesh and follow suit out of respect for everyone else.
 
