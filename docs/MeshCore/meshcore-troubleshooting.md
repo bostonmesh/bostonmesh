@@ -24,7 +24,7 @@ Getting on the mesh involves some basic understanding of radio and a bit of expe
 
 This is the most common issue.
 
-If this previously worked and recently stopped, see **“It used to work, now I can only receive”** below.
+If this previously worked and recently stopped, see **“It used to work”** below.
 
 #### Step 1: Confirm the problem
 - Go to: https://healthcheck.bostonme.sh/
@@ -82,7 +82,7 @@ At this point, it is almost always one of:
 
 ---
 
-## It used to work, now I can only receive
+## It used to work
 
 This is different from a typical signal issue.
 
