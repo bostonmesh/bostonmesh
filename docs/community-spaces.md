@@ -6,11 +6,11 @@ The [Greater Boston Mesh Discord](https://discord.gg/MUVASVEEES) is our primary 
 
 You may also find these regional communities helpful:
 
-- [NHMesh Discord](https://discord.gg/PkbHWSEXBv)  
-  There is significant overlap between Greater Boston Mesh and NHMesh, and many members participate in both.
+- [NHMesh Discord](https://discord.gg/PkbHWSEXBv)  | [Website](https://nhmesh.com/)
 - [Rhode Island Mesh Discord](https://discord.gg/RSXmVP8bP2)
 - [SouthCoast Mesh Discord](https://discord.gg/sZudrRnua5) | [Website](https://southcoastmesh.com/)
 - [CT Mesh Discord](https://discord.gg/m4F328as3K) | [Website](https://ctmesh.org/)
+- [Maine Mesh](https://discord.gg/2Uhz4AzB8E) | [GitHub](https://github.com/JFRHorton/MaineMesh)
 - [Boston Meshnet Facebook Group](https://www.facebook.com/groups/376287875353461)
 
 ## Official Discords
