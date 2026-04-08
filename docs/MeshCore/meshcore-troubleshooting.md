@@ -24,6 +24,8 @@ Getting on the mesh involves some basic understanding of radio and a bit of expe
 
 This is the most common issue.
 
+If this previously worked and recently stopped, see **“It used to work”** below.
+
 #### Step 1: Confirm the problem
 - Go to: https://healthcheck.bostonme.sh/
 - Copy the code and send it to **#ma-hc**
@@ -77,6 +79,70 @@ At this point, it is almost always one of:
 - Move outdoors
 - Improve line of sight
 - Consider hosting a nearby [repeater](https://bostonme.sh/docs/MeshCore/meshcore-getting-started#repeater-infrastructure) in an elevated outdoor location
+
+---
+
+## "It used to work"
+
+This is different from a typical signal issue.
+
+If your setup previously worked and suddenly stopped transmitting, the cause is often:
+- A configuration change (intentional or accidental)
+- A repeater behavior change (flooding, scoping, etc.)
+- Less commonly: hardware or environmental changes
+
+#### Step 1: Test your repeater locally
+- Use **Tools → Trace**
+- Trace to **your own repeater**
+
+- If this fails:
+  - Your device is not properly communicating with your repeater
+- If this works:
+  - Continue below
+
+#### Step 2: Test a known nearby repeater
+- Trace to a repeater you expect to reach
+- **Important:** include your repeater as the final hop
+
+Expected path: `Your Repeater → Target Repeater → Your Repeater`
+
+- If this fails:
+  - Your repeater is not successfully reaching that node
+
+#### Step 3: Check if your messages are leaving your repeater
+- When you send a message, do you see **“repeats heard”**?
+  - If no → your repeater is likely not transmitting correctly
+
+Check:
+- TX power settings
+- Antenna connection
+- Any recent config changes
+
+#### Step 4: Think about recent changes
+If this started after changes, review:
+- Console commands (especially experimental settings)
+- Region or scoping settings
+- Flood/repeat behavior
+- Firmware or config resets
+
+When in doubt:
+- Reapply known-good defaults
+- Restart the repeater
+
+#### Step 5: Don’t rely on maps
+- Not appearing in analyzers or maps does **not** necessarily mean you are not transmitting
+
+Focus on:
+- Trace results
+- Repeats heard
+- Direct connectivity
+
+#### Likely causes
+- Misconfigured repeater (most common)
+- Repeater not flooding/repeating traffic correctly
+- TX power reduced or mis-set
+- Antenna or cable issue
+- Environmental change (less common if sudden)
 
 ---
 
