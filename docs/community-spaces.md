@@ -2,6 +2,11 @@
 
 The [Greater Boston Mesh Discord](https://discord.gg/MUVASVEEES) is our primary space for coordination and discussion.
 
+## Massachusetts Communities
+
+- [Fitchburg MeshCore](https://mesh.og.coop/)
+  Run by the community company [Old Growth Co-Op](https://og.coop/).
+
 ## Regions
 
 You may also find these regional communities helpful:
