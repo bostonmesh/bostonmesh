@@ -19,6 +19,6 @@ You may also find these regional communities helpful:
 
 ## Official Discords
 
-- [Official MeshCore Discord](https://discord.gg/bSuST8xvet)
+- [Official MeshCore.io Discord](https://meshcore.gg/)
 - [Official Meshtastic Discord](https://discord.gg/meshtastic) | [Massachusetts Area Chat](https://discord.com/channels/867578229534359593/1201546802437042286)
 - [Official MeshMapper Discord](https://discord.gg/WdAeFKRne)
