@@ -12,7 +12,7 @@ Here are the main links we reference most often across **Greater Boston Mesh** f
 
 The official MeshCore site and documentation are the best places to start for core guides and project updates.
 
-* **MeshCore:** https://meshcore.io/flasher
+* **MeshCore:** https://meshcore.io/
 * **GitHub Docs:** https://docs.meshcore.io/
 * **Repeater & Room Server CLI Reference:** https://github.com/meshcore-dev/MeshCore/wiki/Repeater-&-Room-Server-CLI-Reference
 
