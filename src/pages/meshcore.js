@@ -52,7 +52,7 @@ export default function Home() {
             <h2>What is MeshCore?</h2>
             <div className="about-description">
               <p>MeshCore is a multi-platform system for enabling secure text-based communications utilizing LoRa radio hardware. It can be used for Off-Grid Communication, Emergency Response & Disaster Recovery, Outdoor Activities, Tactical Security including law enforcement, private security and also IoT sensor networks.</p>
-              <p><a href="https://meshcore.co.uk/" target="_blank" rel="noopener">Learn more about MeshCore →</a></p>
+              <p><a href="https://meshcore.io/" target="_blank" rel="noopener">Learn more about MeshCore →</a></p>
             </div>
           </div>
         </section>
