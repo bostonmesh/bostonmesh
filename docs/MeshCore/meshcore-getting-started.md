@@ -14,7 +14,7 @@ This page is intended to help you get oriented, understand your options, and fig
 
 If you are interested in hosting infrastructure for the network without getting deeply involved, you may also want to read [Host a Node](https://bostonme.sh/docs/host-a-node).
 
-If you are want to learn more about MeshCore in general please visit [MeshCore.io](https://meshcore.io/about.html).
+If you are want to learn more about MeshCore in general please visit [MeshCore.io](https://meshcore.io/).
 
 ---
 
@@ -84,7 +84,7 @@ If you’re just getting started, you can skip room servers entirely. Most peopl
 
 ## Encryption and visibility
 
-[MeshCore traffic is encrypted](https://meshcore.co.uk/about.html). However:
+MeshCore traffic is encrypted. However:
 
 - Public channels are shared keys, meaning anyone with that channel key can read those messages
 - Message routing metadata (the path a message took through the mesh) is visible to the network
@@ -129,7 +129,7 @@ If you are running a companion node in a fixed location or planning to host a re
 
 When you’re ready to set up your LoRa radio, the first step is loading **MeshCore firmware** onto the device using the official MeshCore web flasher:
 
-[MeshCore Web Flasher](https://flasher.meshcore.co.uk)
+[MeshCore Web Flasher](https://meshcore.io/flasher)
 
 Typical first-time steps:
 
