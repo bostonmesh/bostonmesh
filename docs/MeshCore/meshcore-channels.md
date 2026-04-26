@@ -74,7 +74,7 @@ As of April 2026, please note that these are **not** region-locked chats.
 | `#coffee` | Local meetup and casual social coordination.|
 | `#ice-alert` | ICE (Immigration and Customs Enforcement) activity alerts and related safety updates. <br /> **NOTE**: If you think ICE is in your area, please [contact Mass LUCE 617-370-5023](tel:+16173705023) |
 | `#jokes` | Humor and light social traffic. |
-| `#ma-classifieds` | Buy/sell/trade/hire. Mesh Craigslist. |
+| `#ma-classifieds` | Buy/sell/trade/hire. Mesh Craigslist. Be reasonably cautious. |
 | `#politics` | Politics-focused discussion. |
 | `#test` | Node testing, path testing, and signal/routing checks. |
 | `#weather` | Weather reports, forecasts, and weather-related updates. |
