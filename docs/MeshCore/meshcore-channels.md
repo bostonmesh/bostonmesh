@@ -42,7 +42,7 @@ Similarly, New Hampshire has implemented the following channels: `#nhmesh` (thei
 ### Practical Examples: What Should You Do and Where Should You Do It?
 
 * War Driving or mobile testing?
-  * `#ma-wardiving` or DM a known node. It's bad form to test that repeatedly in `Public`.
+  * `#ma-wardriving` or DM a known node. It's bad form to test that repeatedly in `Public`.
 * Chatting with Neighbors a few hops away?
   * DM or `#ma-mesh` - Our neighbors in Rhode Island and New Hampshire probably don't need to be reached.
 * Checking if your repeater is heard on the mesh?
