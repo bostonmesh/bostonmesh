@@ -8,7 +8,7 @@ sidebar_label: MeshCore Resources
 
 Here are the main links we reference most often across **Greater Boston Mesh** for MeshCore.
 
-## MeshCore Resources
+## Official MeshCore Resources
 
 The official MeshCore site and documentation are the best places to start for core guides and project updates.
 
@@ -42,19 +42,41 @@ When flashing, you enter the WiFi SSID and password directly on the flasher page
 
 ---
 
+## Boston Hosted Services
+
+These are services operated by **Greater Boston Mesh** for the local MeshCore community.
+
+### Live Map
+
+Our live map is the quickest way to see active nodes, recent activity, and overall mesh health in near real time. Created by a local resident [Yellowcooln](https://github.com/yellowcooln).
+
+- Live Map: https://live.bostonme.sh/
+
+### Boston Analyzer
+
+Our packet analyzer gives a live local view into Boston Mesh traffic and recent packets.
+
+- Boston Analyzer: https://analyzer.bostonme.sh/#/packets?timeWindow=30
+
+### MeshCore Health Check
+
+This service generates test codes, watches observer receipts, and helps verify whether your node is getting out into the wider network.
+
+- Health Check: https://healthcheck.bostonme.sh/
+
+### MQTT Dashboard
+
+Live MQTT dashboard for node presence, traffic stats, and broker telemetry.
+
+- MQTT Dashboard: https://mcmqttdashboard.bostonme.sh/
+
+---
+
 ## LetsMesh Analyzer
 
 A real-time packet and reliability analysis tool for the MeshCore network. It helps repeater owners monitor health, spot abuse/bugs, and improve overall reliability using data collected from MQTT-connected observer nodes.
 
 - LetsMesh Analyzer: https://analyzer.letsmesh.net/packets?region=BOS
-
----
-
-## Live Map (Greater Boston Mesh)
-
-Our live map is the quickest way to see active nodes, recent activity, and overall mesh health in near real time. Created by a local resident [Yellowcooln](https://github.com/yellowcooln).
-
-- Live Map: https://live.bostonme.sh/
 
 ---
 

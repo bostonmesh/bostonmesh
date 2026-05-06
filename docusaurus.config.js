@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Boston Mesh',
+  title: 'Greater Boston Mesh',
   tagline: '',
   favicon: 'img/favicon.ico',
   headTags: [
