@@ -61,12 +61,32 @@ export default function Home() {
         <section id="map-section" className="map-section">
           <div className="container">
             <h2><a href="https://live.bostonme.sh/" target="_blank" rel="noopener noreferrer">Live Packet Map</a></h2>
-            <iframe id="meshcore-map-iframe" src="https://live.bostonme.sh/?lat=42.34228&lon=-71.58688&zoom=10&layer=dark&history=off&heat=on&labels=off&nodes=on&legend=off&menu=on&units=mi&history_filter=0" title="meshcore-live-packet-map" width="100%" height="600"></iframe>
-            <h2><a href="https://analyzer.letsmesh.net/map?lat=42.36037&long=-71.18462&zoom=9" target="_blank" rel="noopener noreferrer">MeshCore Analyzer Map</a></h2>
-            <iframe id="meshcore-map-iframe" src="https://analyzer.letsmesh.net/map?lat=42.36037&long=-71.18462&zoom=9" title="meshcore-letsmesh-map" width="100%" height="600"></iframe>
-            <h2><a href="https://bos.meshmapper.net/" target="_blank" rel="noopener noreferrer">MeshMapper Coverage Map</a></h2>
-            <iframe id="meshcore-map-iframe" src="https://bos.meshmapper.net/" title="meshmapper-coverage-map" width="100%" height="600"></iframe>
+            <iframe id="meshcore-map-iframe" src="https://live.bostonme.sh/?lat=42.34228&lon=-71.58688&zoom=9&layer=dark&history=off&heat=off&labels=off&nodes=on&legend=off&menu=on&units=mi&history_filter=0" title="meshcore-live-packet-map" width="100%" height="600"></iframe>
+          </div>
+        </section>
 
+
+        <section id="services" className="services light-bg">
+          <div className="container">
+            <h2><Link to="/docs/boston-mesh-services">MeshCore Hosted Services</Link></h2>
+            <div className="contact-grid">
+              <div className="contact-card">
+                <h3><a href="https://live.bostonme.sh/" target="_blank" rel="noopener noreferrer">Live Packet Map</a></h3>
+                <p>Fastest way to see active nodes, packet flow, and overall MeshCore activity across the local network in near real time.</p>
+              </div>
+              <div className="contact-card">
+                <h3><a href="https://analyzer.bostonme.sh/#/packets?timeWindow=30" target="_blank" rel="noopener noreferrer">Boston Analyzer</a></h3>
+                <p>Live packet analyzer for Boston Mesh traffic. Use it to inspect recent packets, confirm visibility, and spot local activity quickly.</p>
+              </div>
+              <div className="contact-card">
+                <h3><a href="https://healthcheck.bostonme.sh/" target="_blank" rel="noopener noreferrer">MeshCore Health Check</a></h3>
+                <p>Generates test codes and checks observer receipts so you can confirm whether your node is getting out into the wider mesh.</p>
+              </div>
+              <div className="contact-card">
+                <h3><Link to="/docs/MeshCore/meshcore-mqtt">MeshCore MQTT</Link></h3>
+                <p>Broker setup and connection guide for the Greater Boston Mesh MeshCore MQTT service, including the local broker and dashboard details.</p>
+              </div>
+            </div>
           </div>
         </section>
 

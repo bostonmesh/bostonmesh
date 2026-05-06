@@ -61,10 +61,25 @@ export default function Home() {
 
         <section id="map-section" className="map-section">
           <div className="container">
-            <h2><a href="https://malla.bostonme.sh/map?sidebar-collapsed=true" target="_blank" rel="noopener noreferrer">Meshtastic Malla Map</a></h2>
-            <iframe id="meshcore-map-iframe" src="https://malla.bostonme.sh/map?sidebar-collapsed=true" title="meshtastic-malla-map" width="100%" height="600"></iframe>
-            <h2><a href="https://meshtastic.liamcottle.net/?lat=42.379345257263964&lng=288.52706909179693&zoom=10" target="_blank" rel="noopener noreferrer">Liam Cottle Map</a></h2>
-            <iframe id="meshcore-map-iframe" src="https://meshtastic.liamcottle.net/?lat=42.379345257263964&lng=288.52706909179693&zoom=10" title="description_of_embedded_content" width="100%" height="600"></iframe>
+            <h2><a href="https://malla.bostonme.sh/map?sidebar-collapsed=true" target="_blank" rel="noopener noreferrer">Meshtastic Malla</a></h2>
+            <iframe id="meshcore-map-iframe" src="https://malla.bostonme.sh/map?sidebar-collapsed=true" title="meshtastic-malla" width="100%" height="600"></iframe>
+          </div>
+        </section>
+
+
+        <section id="services" className="services light-bg">
+          <div className="container">
+            <h2><Link to="/docs/boston-mesh-services">Meshtastic Hosted Services</Link></h2>
+            <div className="contact-grid">
+              <div className="contact-card">
+                <h3><a href="https://malla.bostonme.sh/?sidebar-collapsed=true" target="_blank" rel="noopener noreferrer">Meshtastic Malla</a></h3>
+                <p>Boston-hosted Meshtastic viewer built from local MQTT data so you can quickly check nodes, messages, and network activity.</p>
+              </div>
+              <div className="contact-card">
+                <h3><Link to="/docs/Meshtastic/meshtastic-mqtt">Meshtastic MQTT</Link></h3>
+                <p>Broker setup and connection guide for the Greater Boston Mesh Meshtastic MQTT service, including the local broker details.</p>
+              </div>
+            </div>
           </div>
         </section>
 
